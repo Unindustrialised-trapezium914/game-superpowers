@@ -76,15 +76,21 @@ bash scripts/uninstall-claude-skills.sh
 bash scripts/install-codex-skills.sh
 ```
 
-This creates a single symlink:
+This creates a package root directory:
 
 ```text
-~/.agents/skills/game-superpowers -> /path/to/repo/skills
+~/.agents/skills/game-superpowers/
 ```
 
-This mirrors the “single import exposes many skills” pattern used by projects such as Superpowers.
+Inside that package root, the installer creates symlinks for:
 
-It does not create one copied folder per skill.
+- each skill folder from `skills/`
+- `shared/`
+- `schemas/`
+
+This is important because many Game Superpowers skills reference shared templates, references, and schemas.
+
+If you installed an older version of this repo before this fix, rerun the installer so the legacy single-symlink layout is migrated automatically.
 
 If your environment does not support symlinks cleanly, copy selected skill folders from `skills/` into your target `.agents/skills/` directory instead.
 

@@ -2,11 +2,40 @@
 set -euo pipefail
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DEST_BASE="${CODEX_SKILLS_DIR:-$HOME/.agents/skills}"
-mkdir -p "$DEST_BASE"
 TARGET="$DEST_BASE/game-superpowers"
-if [ -e "$TARGET" ] || [ -L "$TARGET" ]; then
-  echo "skip: $TARGET already exists"
-  exit 0
+MARKER=".game-superpowers-install"
+
+mkdir -p "$DEST_BASE"
+
+# Migrate the legacy install shape where the package root was a single symlink to repo/skills.
+if [ -L "$TARGET" ] && [ "$(readlink "$TARGET")" = "$REPO_DIR/skills" ]; then
+  rm "$TARGET"
 fi
-ln -s "$REPO_DIR/skills" "$TARGET"
-printf 'Linked %s -> %s\n' "$TARGET" "$REPO_DIR/skills"
+
+if [ -e "$TARGET" ] && [ ! -d "$TARGET" ]; then
+  echo "skip: $TARGET exists and is not a directory"
+  exit 1
+fi
+
+mkdir -p "$TARGET"
+touch "$TARGET/$MARKER"
+
+for skill in "$REPO_DIR/skills"/*; do
+  [ -d "$skill" ] || continue
+  name="$(basename "$skill")"
+  link="$TARGET/$name"
+  if [ -e "$link" ] || [ -L "$link" ]; then
+    rm -rf "$link"
+  fi
+  ln -s "$skill" "$link"
+done
+
+for shared_dir in shared schemas; do
+  link="$TARGET/$shared_dir"
+  if [ -e "$link" ] || [ -L "$link" ]; then
+    rm -rf "$link"
+  fi
+  ln -s "$REPO_DIR/$shared_dir" "$link"
+done
+
+printf 'Installed Game Superpowers into %s\n' "$TARGET"

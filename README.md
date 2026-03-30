@@ -110,7 +110,7 @@ Recommended options:
 2. **Repo-scoped install**: copy or symlink selected skills into a project’s `.agents/skills/`
 
 Notes:
-- the Codex install script creates one symlink named `game-superpowers` that points to this repo’s `skills/` directory
+- the Codex install script creates a `game-superpowers` package root under `~/.agents/skills/` and links in the repo’s skill folders plus `shared/` and `schemas/`
 - if that symlink model is confusing, treat `skills/` as the real library and `.agents/skills/` as a compatibility path only
 
 ## Typical usage

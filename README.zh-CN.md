@@ -81,7 +81,7 @@ Game Superpowers 分成两条主线：
 2. **repo-scoped install**：把技能复制或链接到项目的 `.agents/skills/`
 
 说明：
-- Codex 安装脚本会创建一个名为 `game-superpowers` 的 symlink，指向本仓库的 `skills/` 目录
+- Codex 安装脚本会在 `~/.agents/skills/` 下创建一个 `game-superpowers` 包根目录，并把本仓库的各个 skill 目录以及 `shared/`、`schemas/` 链接进去
 - 如果这种 symlink 结构看起来让人困惑，请直接把 `skills/` 理解为真实技能库，把 `.agents/skills/` 理解为兼容路径
 
 ## 用法
