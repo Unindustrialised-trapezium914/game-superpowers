@@ -1,6 +1,7 @@
 bundle: game-scope-guard
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Protect the project from runaway complexity without destroying the user’s real goal. Scope differently depending on whether the project is greenfield, refactor-friendly, or live-risky.
 compatibility:

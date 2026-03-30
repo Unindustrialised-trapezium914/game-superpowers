@@ -1,6 +1,7 @@
 bundle: game-requirements-brainstorm
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Use when the request is vague, contradictory, or too under-specified to build a strong game result. Turn the request into a concise production-ready requirement brief without getting stuck in endless ideation.
 compatibility:

@@ -1,6 +1,7 @@
 bundle: game-implementation-plan
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
 compatibility:

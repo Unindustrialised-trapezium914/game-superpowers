@@ -1,6 +1,7 @@
 bundle: game-compare-backends
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Run a narrow compare between two or three backend profiles when architecture uncertainty is real. Use carefully, because it usually costs more tokens and time.
 compatibility:

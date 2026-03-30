@@ -1,6 +1,7 @@
 bundle: game-live-patch
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Use when the repo is shipped or live-risky. This skill narrows changes, documents blast radius and rollback, and prioritizes safety over broad cleanup.
 compatibility:

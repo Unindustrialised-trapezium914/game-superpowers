@@ -1,6 +1,7 @@
 bundle: game-project-state-assessment
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Use before major game work begins. Inspect the repo and request to classify the project as greenfield, prelaunch iteration, shipped product, or live-risky work. This determines whether aggressive AI-native development is appropriate.
 compatibility:

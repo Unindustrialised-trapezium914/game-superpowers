@@ -1,8 +1,9 @@
 bundle: game-audio-feedback-audit
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
-  Audit the project’s audio layer as UX feedback: UI sounds, success/failure signals, danger cues, layering, and semantic sound priorities.
+  Audit the project's audio layer as UX feedback: UI sounds, success/failure signals, danger cues, layering, and semantic sound priorities.
 compatibility:
   designed_for:
     surfaces:
@@ -39,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:a552214b92a59653229d4c4d980e42108dd181d914f5ab0112e87037bd1d5b7c
+    hash: sha256:97e09929feec8f4ec95d01ca883451378fedfd41fa22d32ee7281b86ec6828b2
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:84fb4ff302156ee050ecbb9ef1fc626820e64b20db57425cf401b8eab50ce806
+    hash: sha256:25e222aadf306537ddd3ad6bd56fe977c750672b027e698d43a751f71ce0988f
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference

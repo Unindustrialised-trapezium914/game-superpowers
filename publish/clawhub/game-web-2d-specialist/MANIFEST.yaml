@@ -1,6 +1,7 @@
 bundle: game-web-2d-specialist
 bundle_version: 1.1.1
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Apply concrete browser 2D implementation guidance after backend selection. Use this when the project is web-first and the chosen route is 2D UI-first or 2D world-first.
 compatibility:

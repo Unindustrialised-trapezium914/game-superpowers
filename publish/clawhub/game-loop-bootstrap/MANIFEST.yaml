@@ -1,6 +1,7 @@
 bundle: game-loop-bootstrap
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Establish the game-native architecture: managers, state flow, player control, camera, UI ownership, and other core systems needed for a maintainable build.
 compatibility:
@@ -44,7 +45,7 @@ files:
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:58d7e23b7c7d8e3e4b72d47567cac87e3386275b9b00cfceb65a929bcfea5f93
+    hash: sha256:80fd574c30c9efa6a85fa359490d76034e8c44891f8c5b970207e63e2d69aa32
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference

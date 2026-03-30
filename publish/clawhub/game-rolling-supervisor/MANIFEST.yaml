@@ -1,6 +1,7 @@
 bundle: game-rolling-supervisor
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Enable a guarded external rolling build/verify/repair loop for high-autonomy game development. Use when the task is too large for one clean session and broad changes are allowed.
 compatibility:

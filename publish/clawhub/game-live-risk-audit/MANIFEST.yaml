@@ -1,6 +1,7 @@
 bundle: game-live-risk-audit
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Audit risk in shipped or high-risk projects: rollback danger, compatibility hazards, state corruption, operational blast radius, and should-not-touch areas.
 compatibility:
@@ -44,7 +45,7 @@ files:
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:a496b8797a4bce58284119ddbc1704a1486595c82ea1ef7f1a090b2c22580dfb
+    hash: sha256:1bfe91fee13d300b81ec27f72d10d6be560b88b6ef9307d31654c3f28b19706d
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference

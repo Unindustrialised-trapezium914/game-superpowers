@@ -1,6 +1,7 @@
 bundle: game-hud-readability-audit
 bundle_version: 1.1.1
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Audit HUD information hierarchy, readability, layout pressure, control discoverability, and mobile thumb-zone issues in an existing project.
 compatibility:

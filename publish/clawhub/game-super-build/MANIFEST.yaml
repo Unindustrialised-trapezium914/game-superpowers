@@ -1,6 +1,7 @@
 bundle: game-super-build
 bundle_version: 1.1.1
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Use as the top-level orchestration skill for serious game work. It decides project state, locks concept and scope, chooses an AI-native build mode, sets the quality target, and routes the rest of the workflow. This is the main “skills of skills” entry point.
 compatibility:

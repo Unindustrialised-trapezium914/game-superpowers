@@ -1,6 +1,7 @@
 bundle: game-mechanics-systems-design
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Translate the concept, UX flow, and quality target into game-native systems such as core loop, state model, progression, encounter logic, save boundaries, and sound ownership. Use when the build needs more than a vague architecture sketch.
 compatibility:

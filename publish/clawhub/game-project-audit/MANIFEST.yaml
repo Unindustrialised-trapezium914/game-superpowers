@@ -1,6 +1,7 @@
 bundle: game-project-audit
 bundle_version: 1.1.1
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Top-level audit skill for existing game projects. Use it to run a read-first, multi-dimensional audit covering UI/UX, feedback, mechanics, completeness, maintainability, and live risk before any repair work.
 compatibility:

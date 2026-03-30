@@ -1,6 +1,7 @@
 bundle: game-audit-scorecard
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Summarize audit findings into a structured multi-dimensional scorecard for UI/UX, feedback, mechanics, scope completeness, maintainability, and live risk.
 compatibility:

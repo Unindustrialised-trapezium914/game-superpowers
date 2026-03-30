@@ -1,6 +1,7 @@
 bundle: game-backend-selector
 bundle_version: 1.1.1
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Choose or compare backend profiles based on required capabilities, project state, and quality target. Stay stack-neutral at the top level while still giving sharp recommendations and tradeoffs.
 compatibility:

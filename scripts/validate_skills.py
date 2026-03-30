@@ -1,23 +1,62 @@
 #!/usr/bin/env python3
-import pathlib, re, sys
+import json
+import pathlib
+import re
+import shutil
+import subprocess
+import sys
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SKILLS = ROOT / 'skills'
 NAME_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
-def parse_frontmatter(text: str):
+def split_frontmatter(text: str):
     if not text.startswith('---\n'):
         raise ValueError('missing YAML frontmatter start')
     parts = text.split('\n---\n', 1)
     if len(parts) != 2:
         raise ValueError('missing YAML frontmatter end')
     front, body = parts
-    meta = {}
-    for line in front.removeprefix('---\n').splitlines():
-        if not line.strip() or line.startswith('  ') or ':' not in line:
-            continue
-        k, v = line.split(':', 1)
-        meta[k.strip()] = v.strip().strip('"')
-    return meta, body
+    return front.removeprefix('---\n'), body
+
+def parse_yaml_frontmatter(frontmatter: str):
+    ruby = shutil.which('ruby')
+    if not ruby:
+        raise ValueError('ruby not found; strict YAML validation unavailable')
+    script = """
+require 'yaml'
+require 'json'
+begin
+  data = YAML.safe_load(STDIN.read, permitted_classes: [], aliases: false) || {}
+  puts JSON.generate(data)
+rescue Psych::SyntaxError => e
+  warn e.message
+  exit 1
+end
+"""
+    proc = subprocess.run(
+        [ruby, '-e', script],
+        input=frontmatter,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        raise ValueError(f'invalid YAML: {proc.stderr.strip()}')
+    data = json.loads(proc.stdout)
+    if not isinstance(data, dict):
+        raise ValueError('frontmatter must parse to a mapping')
+    return data
+
+def extract_meta(data: dict):
+    meta = {
+        'name': data.get('name'),
+        'description': data.get('description'),
+    }
+    metadata = data.get('metadata')
+    if isinstance(metadata, dict):
+        meta['metadata.version'] = metadata.get('version')
+    return meta
 
 errors = []
 count = 0
@@ -29,7 +68,12 @@ for d in sorted(SKILLS.iterdir()):
     if not p.exists():
         errors.append(f'{d.name}: missing SKILL.md')
         continue
-    meta, body = parse_frontmatter(p.read_text(encoding='utf-8'))
+    try:
+        frontmatter, body = split_frontmatter(p.read_text(encoding='utf-8'))
+        meta = extract_meta(parse_yaml_frontmatter(frontmatter))
+    except ValueError as e:
+        errors.append(f'{d.name}: {e}')
+        continue
     if meta.get('name') != d.name:
         errors.append(f"{d.name}: frontmatter name mismatch ({meta.get('name')})")
     if not NAME_RE.match(meta.get('name', '')):

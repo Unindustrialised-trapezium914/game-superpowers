@@ -1,6 +1,7 @@
 bundle: game-ux-flow-audit
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Audit first-30-seconds flow, onboarding, fail/retry loops, navigation clarity, and player understanding in an existing game project.
 compatibility:

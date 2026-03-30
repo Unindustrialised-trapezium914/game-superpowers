@@ -1,6 +1,7 @@
 bundle: using-game-superpowers
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Use when the task is about building, auditing, or improving a game project with this Game Superpowers skill collection. Acts as the collection bootstrap skill: classify the request, choose the right specialized game skills, and coordinate them instead of trying to solve the entire task ad hoc.
 compatibility:
@@ -72,7 +73,7 @@ files:
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:e2a0f6dfb7c7f614a7299c9e1e836ac5a793152e880f03a92a59a75b20631f16
+    hash: sha256:b27144597325d8dc038ef5500a9f72267389bc3d5e7c4e86b01d4ed2b5709e4a
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference

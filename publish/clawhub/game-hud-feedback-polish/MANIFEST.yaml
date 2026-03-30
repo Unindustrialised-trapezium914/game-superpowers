@@ -1,6 +1,7 @@
 bundle: game-hud-feedback-polish
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Improve UI clarity, micro-feedback, pacing, feel, and critical affordances so the result feels intentional rather than dead or placeholder-level.
 compatibility:

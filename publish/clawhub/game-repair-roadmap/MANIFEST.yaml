@@ -1,6 +1,7 @@
 bundle: game-repair-roadmap
 bundle_version: 1.1.0
 bundle_date: 2026-03-30
+license: MIT
 description: >
   Convert audit findings into a prioritized repair roadmap with quick wins, high-impact fixes, risky items, and explicit do-not-touch zones.
 compatibility:
