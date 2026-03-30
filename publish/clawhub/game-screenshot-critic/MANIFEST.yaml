@@ -1,0 +1,68 @@
+bundle: game-screenshot-critic
+bundle_version: 1.1.1
+bundle_date: 2026-03-30
+description: >
+  Critique screenshots or visual evidence for readability, hierarchy, visual direction, and target-quality fit. Use after builds, playtests, or visual iterations.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:e904520221a6f54667c83c0b9752602c4b46b7feb108f18f491d26e82456b919
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:bf52dff4bf4435a4046363a0614dd91bff44eb44b4ed90fb24bc90430d716824
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:6c0d96ea64d7e1aeb045f1309d4700f21d48bd362e7fde4684f972924ba0a10e
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:fa5cb881798a661eadd1e6897ed5d7f7de38b4c658a74c7ba780941ffb51de0a
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/screenshot-critic-output-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:3185f53e210dfc1894ec6b40d664e2974ecdf1c0082d289afcdf64a39669875b
+    note: Referenced support file: shared/checklists/screenshot-critic-output-checklist.md
+  - path: shared/checklists/ui-ux-hard-rules.md
+    role: reference
+    version: 1
+    hash: sha256:765a241603ce1dee5d0bdf8481094c289b7066338c693d9f5b83d5169a773172
+    note: Referenced support file: shared/checklists/ui-ux-hard-rules.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:07c6ffe383d227ab8c98f552306eb3f9cdb0a9cba015a4a82b6e31add984b813
+    note: Referenced support file: tests/smoke.md

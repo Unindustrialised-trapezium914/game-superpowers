@@ -1,0 +1,63 @@
+bundle: game-implementation-plan
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:14a63f925475e4415c2280dd4f9127c03cdfb99d9afdd463e979e2e76a158514
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:40e5251721e731067bd43924bd261aa70fc7ca60619720e8bdf277e0c050135d
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:f5cc912987f764cf70073a2740409132a985c22cc13b51724dd7c127095f99ca
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:d61de51643d819f385aae80784b8bb1feede6dadaf8f8b0c2e749bb756e80e1e
+    note: Referenced support file: examples/usage.md
+  - path: shared/templates/task-plan.md
+    role: reference
+    version: 1
+    hash: sha256:7e4aefbaaa15795340dfb6082d251dd8640aaa180b603e5eeb74909797ce3daf
+    note: Referenced support file: shared/templates/task-plan.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:b4b6ee866627f97aebea108e08ed179cb583a4d560baa06636c76c73575048d4
+    note: Referenced support file: tests/smoke.md

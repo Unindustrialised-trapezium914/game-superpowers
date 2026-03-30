@@ -1,0 +1,15 @@
+# Smoke Test
+
+Bundle: `game-super-build`
+Version: `1.1.1`
+
+## Prompt
+
+Use `game-super-build` on a fitting game-development task.
+
+## Expected checks
+
+- The agent recognizes the skill's stated purpose.
+- The agent uses packaged references when `SKILL.md` points to `./shared/...`.
+- The agent does not claim companion skills are bundled implicitly when they are separate installs.
+- Companion skills referenced in this bundle: game-backend-selector, game-build-strategy, game-concept-brainstorm, game-feedback-design, game-implementation-plan, game-mechanics-systems-design, game-playability-verifier, game-production-code

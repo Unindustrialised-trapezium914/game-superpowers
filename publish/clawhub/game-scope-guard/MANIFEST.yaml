@@ -1,0 +1,58 @@
+bundle: game-scope-guard
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Protect the project from runaway complexity without destroying the user’s real goal. Scope differently depending on whether the project is greenfield, refactor-friendly, or live-risky.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  - game-scope-profile
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:e9cb1a98d049e6e5f4ca1d447736d41eae50d596eb5e3b890816824ae6e68b2b
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:7b93a6c62f1fd6723df43da7c3ab0b015e5ce33d377ccae842f74df497e16d00
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:405151a73ee8752cffeb10e7c53d2210f33b64755a0eab055ea5e45199215176
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:ddc2bdb21c69a2a4ec7dc4452b6b97b604c6e36b2d85401e483a51910dac94bf
+    note: Referenced support file: examples/usage.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:6f45fd7c2e38ec6ad5fe5f587214841f4f96e842994c1714f17b5ae6881dbc9b
+    note: Referenced support file: tests/smoke.md

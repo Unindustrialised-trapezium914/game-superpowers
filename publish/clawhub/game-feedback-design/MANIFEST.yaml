@@ -1,0 +1,78 @@
+bundle: game-feedback-design
+bundle_version: 1.1.1
+bundle_date: 2026-03-30
+description: >
+  Design the game’s feedback grammar across visuals, audio, motion, danger signaling, reward signaling, and UI acknowledgment so the result feels alive rather than placeholder-level.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:642edb99b0045771324c434b174886f0c99b5aec2d09ef9d4857d7a3b9cd4fc8
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:2485ab7f7bdc24d187da12141dc4dc28ce851942848ea458d3df66629ded2908
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:339ce7ffdde61ba9623ce4b6e32d53405ac9df219799b3a1a11573a5264f0570
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:290c9c2ce052ad14430f0965cdf2814a033eba6de6ecdf01596bb7d82d49eeb2
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/feedback-design-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:0f83546556578b0d81a461b917a2a3348ff0aaf7f72462418194a609ca083f95
+    note: Referenced support file: shared/checklists/feedback-design-checklist.md
+  - path: shared/checklists/game-feel-pillars.md
+    role: reference
+    version: 1
+    hash: sha256:f75f3df90f903f82965185855d5cf51da79c3032823c1f627b70160ab0dacdd2
+    note: Referenced support file: shared/checklists/game-feel-pillars.md
+  - path: shared/checklists/ui-ux-hard-rules.md
+    role: reference
+    version: 1
+    hash: sha256:765a241603ce1dee5d0bdf8481094c289b7066338c693d9f5b83d5169a773172
+    note: Referenced support file: shared/checklists/ui-ux-hard-rules.md
+  - path: shared/templates/feedback-design.md
+    role: reference
+    version: 1
+    hash: sha256:735eca9ce2d0215ba7574e26106ea7a8820bf2ca6bef8e7ba2eb435d9e34185e
+    note: Referenced support file: shared/templates/feedback-design.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:3303e862461cfee1c1e0b6a15c114357782c390f98cad0d8ae43dc6ff1a70411
+    note: Referenced support file: tests/smoke.md

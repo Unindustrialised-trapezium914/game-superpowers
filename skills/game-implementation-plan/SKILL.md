@@ -1,0 +1,32 @@
+---
+name: game-implementation-plan
+description: Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
+license: MIT
+compatibility: Claude Code and Codex. Best results with file read/write access.
+metadata:
+  author: game-superpowers
+  version: "1.1.0"
+  domain: game-development
+---
+
+# Game Implementation Plan
+
+Turn the approved build brief into an execution plan.
+Use `../../shared/templates/task-plan.md`.
+
+## Deliverable
+Write `docs/game-studio/plan.md`.
+
+## Key rule
+Do not use one default task size for all situations.
+Use the chosen development mode.
+
+## Planning bias
+- In **yolo-super**, larger end-to-end tasks are allowed and often preferred.
+- In **guided-build**, keep the plan comprehensible but still fast.
+- In **refactor-open**, plan migrations and replacements explicitly.
+- In **surgical-live**, keep tasks tight and rollbackable.
+
+## Important
+Do not produce fake progress tasks like “set up scaffolding” unless that scaffold immediately enables real implementation.
+Prefer tasks that end in a stronger running build.

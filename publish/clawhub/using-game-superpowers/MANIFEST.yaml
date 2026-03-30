@@ -1,0 +1,86 @@
+bundle: using-game-superpowers
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Use when the task is about building, auditing, or improving a game project with this Game Superpowers skill collection. Acts as the collection bootstrap skill: classify the request, choose the right specialized game skills, and coordinate them instead of trying to solve the entire task ad hoc.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  - game-architecture-maintainability-audit
+  - game-audio-feedback-audit
+  - game-audit-scorecard
+  - game-build-strategy
+  - game-concept-brainstorm
+  - game-feedback-audit
+  - game-feedback-design
+  - game-feel-audit
+  - game-hud-feedback-polish
+  - game-hud-readability-audit
+  - game-live-risk-audit
+  - game-loop-bootstrap
+  - game-mechanics-systems-audit
+  - game-mechanics-systems-design
+  - game-playability-verifier
+  - game-polished-prototype
+  - game-production-feature
+  - game-production-readiness-audit
+  - game-project-audit
+  - game-project-state-assessment
+  - game-repair-roadmap
+  - game-scope-completeness-audit
+  - game-scope-profile
+  - game-screenshot-critic
+  - game-super-build
+  - game-ux-flow-audit
+  - game-ux-flow-designer
+  - game-web-2d-specialist
+  - game-web-3d-specialist
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:b32defce55a53df809b9ed9cc8da788d06baf44b5da077c302fa3bcc69a5405b
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:a213c295ad1dc6c687ce19a89302659f644ea9a1d64b9ee8744aa02b6d2dddc2
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:e2a0f6dfb7c7f614a7299c9e1e836ac5a793152e880f03a92a59a75b20631f16
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:8626b56d9b02e449d49a3f9b1ed2995111ea18b54c0a4656a7774f4a7a974fc4
+    note: Referenced support file: examples/usage.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:8d8497d8f557ac6c230c33ac5e0d8c1a8943d49b042e120a1fcdc1ad40dd0309
+    note: Referenced support file: tests/smoke.md

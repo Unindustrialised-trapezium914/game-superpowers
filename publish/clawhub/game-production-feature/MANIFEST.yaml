@@ -1,0 +1,68 @@
+bundle: game-production-feature
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Use when the requested outcome should land as a maintainable product-grade feature rather than a prototype. This skill protects completeness, integration quality, and verification discipline.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:0e049975b39d37322a474ad390f85bf8142407867fd4ac696ea5c0f26b3255e5
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:9829af802cee259af37f395e87dbfe8748d8287d33f077fcd66c41a6fe0909e0
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:d2752e431c794508e1a85665bdf09c9460d72a0c0f2a1d118f8d377465dbdb49
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:0257cdb0e3fc0839f47cd53019310d94527e191c68746dfbc9e8fb95382bba4b
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/production-code-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:2a199d6ea16b09437618f4a999e2a7b38403d7480bcb1dfa3f9178c4d30249e9
+    note: Referenced support file: shared/checklists/production-code-checklist.md
+  - path: shared/checklists/production-feature-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:17b3ca9e07a1b258754f79ecb42249756a334ec00cff482325ca8da32d313ddd
+    note: Referenced support file: shared/checklists/production-feature-checklist.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:65f16338875d01b09a42d5bb6d30f62689a87dc58bd256b93c37600621974cf3
+    note: Referenced support file: tests/smoke.md

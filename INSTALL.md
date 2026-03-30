@@ -1,0 +1,130 @@
+# Installing Game Superpowers (Skills-Only)
+
+This repository is distributed as a **skills collection**.
+
+It does **not** require plugin packaging to be useful.
+
+## Official compatibility model
+
+### Claude Code
+Claude Code supports skills in:
+- `~/.claude/skills/<skill-name>/SKILL.md` for personal skills
+- `.claude/skills/<skill-name>/SKILL.md` for project skills
+- directories added with `--add-dir` if they contain `.claude/skills/...`
+
+### Codex
+Codex supports skills in:
+- `~/.agents/skills/` for user skills
+- `.agents/skills/` inside repositories for repo-scoped skills
+- symlinked skill folders in those locations
+
+## Repository layout used here
+
+This repo keeps the source-of-truth skills in:
+- `skills/`
+
+And provides compatibility paths:
+- `.claude/skills/` → symlinks into `skills/`
+- `.agents/skills/` → symlinks into `skills/`
+
+Important:
+- `skills/` is the real library
+- `.claude/skills/` and `.agents/skills/` exist to help host discovery
+- they are symlink-based compatibility paths, not separate copies
+- if your platform, archive tool, or Git client does not preserve symlinks cleanly, work from `skills/` directly
+
+## Claude Code options
+
+### Option A — one-repo session via `--add-dir`
+
+This is the cleanest official path if you want to use the whole collection without flattening it into your home directory.
+
+```bash
+claude --add-dir /path/to/game-superpowers-skills-only
+```
+
+Because this repository contains `.claude/skills/`, Claude Code will load those skills automatically from the additional directory.
+
+This means:
+- Claude discovers the compatibility path
+- those entries point back to `skills/`
+- you should edit `skills/`, not `.claude/skills/`
+
+### Option B — personal install
+
+```bash
+bash scripts/install-claude-skills.sh
+```
+
+This symlinks each skill into `~/.claude/skills/`.
+
+It does not copy the skill folders.
+
+If your shell or filesystem does not support symlinks well, copy selected folders from `skills/` into `~/.claude/skills/` manually instead.
+
+To uninstall:
+
+```bash
+bash scripts/uninstall-claude-skills.sh
+```
+
+## Codex options
+
+### Option A — user install
+
+```bash
+bash scripts/install-codex-skills.sh
+```
+
+This creates a single symlink:
+
+```text
+~/.agents/skills/game-superpowers -> /path/to/repo/skills
+```
+
+This mirrors the “single import exposes many skills” pattern used by projects such as Superpowers.
+
+It does not create one copied folder per skill.
+
+If your environment does not support symlinks cleanly, copy selected skill folders from `skills/` into your target `.agents/skills/` directory instead.
+
+### Option B — repo-scoped install
+
+If you only want these skills inside one project, copy or symlink selected skills into that project’s `.agents/skills/`.
+
+For repo-scoped installs, prefer copying if you want maximum portability for collaborators using ZIP downloads, Windows setups without symlink support, or restrictive filesystems.
+
+## Verifying installation
+
+### Claude
+Start a new session and try:
+
+```text
+/using-game-superpowers
+```
+
+Or ask:
+
+```text
+Use Game Superpowers to audit this game project.
+```
+
+### Codex
+Restart Codex if needed, then try:
+
+```text
+$using-game-superpowers
+```
+
+Or ask:
+
+```text
+Use Game Superpowers to build a polished prototype.
+```
+
+## Notes
+
+- Claude project/add-dir mode is the most official-friendly way to use the full collection without a plugin.
+- Codex user install works well with symlinked skill folders.
+- If `.claude/skills/` or `.agents/skills/` looks strange in a file browser, that is expected: they are compatibility symlink paths that point back to `skills/`.
+- If a skill does not appear immediately, restart the host.

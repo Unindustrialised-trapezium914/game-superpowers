@@ -1,0 +1,136 @@
+bundle: game-super-build
+bundle_version: 1.1.1
+bundle_date: 2026-03-30
+description: >
+  Use as the top-level orchestration skill for serious game work. It decides project state, locks concept and scope, chooses an AI-native build mode, sets the quality target, and routes the rest of the workflow. This is the main “skills of skills” entry point.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  - game-backend-selector
+  - game-build-strategy
+  - game-concept-brainstorm
+  - game-feedback-design
+  - game-implementation-plan
+  - game-mechanics-systems-design
+  - game-playability-verifier
+  - game-production-code
+  - game-project-audit
+  - game-project-state-assessment
+  - game-requirements-brainstorm
+  - game-scope-profile
+  - game-screenshot-critic
+  - game-ux-flow-designer
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:07d7398cdd7d06c9db5d15b0f51b8235cd68391541b4b1638fd4b98cda36ce31
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:1eb551fba4b20fe23a47c6172cf98487114d6260ddb252ea18d2440dca0e18e9
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:5b194effc31391f97aa8cc907deb98ae44379e3b08458823b06179593e905f1b
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:37cb9f9aec0c61b01c7abbd5ef221d12186d4ac2e3325202086a5c4bf99f56d5
+    note: Referenced support file: examples/usage.md
+  - path: shared/templates/backend-decision.md
+    role: reference
+    version: 1
+    hash: sha256:8bb360fd8f1519b080d42cc76bd70f3e3b4e77644de9104397f894f681641206
+    note: Referenced support file: shared/templates/backend-decision.md
+  - path: shared/templates/build-strategy.md
+    role: reference
+    version: 1
+    hash: sha256:41497bc63c747e7a07e14f95f6de4df3bf3ec7bbefc9d3dcab8c6967cd3f3094
+    note: Referenced support file: shared/templates/build-strategy.md
+  - path: shared/templates/concept-brainstorm.md
+    role: reference
+    version: 1
+    hash: sha256:a35f0f510db75dc3264af30065182f37de6dffc5adb9292ecdafaa1706b4b8d2
+    note: Referenced support file: shared/templates/concept-brainstorm.md
+  - path: shared/templates/feedback-design.md
+    role: reference
+    version: 1
+    hash: sha256:735eca9ce2d0215ba7574e26106ea7a8820bf2ca6bef8e7ba2eb435d9e34185e
+    note: Referenced support file: shared/templates/feedback-design.md
+  - path: shared/templates/game-build-brief.md
+    role: reference
+    version: 1
+    hash: sha256:a448d29d616ad9fd4579730d9e9945680b64165527a4a4aab35602919f40599c
+    note: Referenced support file: shared/templates/game-build-brief.md
+  - path: shared/templates/project-state-assessment.md
+    role: reference
+    version: 1
+    hash: sha256:211718606ee08d6ba852ba4e8faa2a41cf1889353d83aa962db2c12fec1af67b
+    note: Referenced support file: shared/templates/project-state-assessment.md
+  - path: shared/templates/quality-report.md
+    role: reference
+    version: 1
+    hash: sha256:739a83b5d79e81f224f9915e107b35ea59165097d6ebf682d8721e6454507a8b
+    note: Referenced support file: shared/templates/quality-report.md
+  - path: shared/templates/quality-target.md
+    role: reference
+    version: 1
+    hash: sha256:85d1340211bfbe36074c8da9b2a2ff2fecd0f2f899c3ef72a121414210e9d005
+    note: Referenced support file: shared/templates/quality-target.md
+  - path: shared/templates/release-safety.md
+    role: reference
+    version: 1
+    hash: sha256:7a8a408babe62fda67437f535361ec3f72841f384c6c1dcd02f178c149bc4661
+    note: Referenced support file: shared/templates/release-safety.md
+  - path: shared/templates/requirements-brief.md
+    role: reference
+    version: 1
+    hash: sha256:b1fb840e9ff8d13bdc7d915f3a4a9982da86158b16dbcb5b7b96f24d2482e441
+    note: Referenced support file: shared/templates/requirements-brief.md
+  - path: shared/templates/rolling-supervisor-plan.md
+    role: reference
+    version: 1
+    hash: sha256:4fede22855fa9e0cf289db15092d5534b955c112e0441602a9f526b50bac2668
+    note: Referenced support file: shared/templates/rolling-supervisor-plan.md
+  - path: shared/templates/scope-profile.md
+    role: reference
+    version: 1
+    hash: sha256:b839718585243b788546ba7e9e43ece517e2b87885e8f479d28bb9357b8ab7ae
+    note: Referenced support file: shared/templates/scope-profile.md
+  - path: shared/templates/system-design.md
+    role: reference
+    version: 1
+    hash: sha256:45398f7d689059f6bcc4829664abf5ada1a49c174f57a3a7e7f34674656c1a7d
+    note: Referenced support file: shared/templates/system-design.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:86a99d73840ad45880cf561133234a4ce35d755dfb8c1adbc92c88e0cf3af751
+    note: Referenced support file: tests/smoke.md

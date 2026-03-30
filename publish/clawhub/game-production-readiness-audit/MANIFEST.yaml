@@ -1,0 +1,68 @@
+bundle: game-production-readiness-audit
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Audit whether the project meets production-grade expectations for structure, maintainability, standards, and safe continued iteration.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:363a78754a12d38f25d5e32c6088ef5ccf26c74d2315ecf171cb71535b9e1e1b
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:2523fabbe7e1db459ac7fa3b9da18657c979a199173765abd1ce165276b15c72
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:e3623aceb4570ef3efb34c4451c2a50eea0a08c44269b5283f420dd561e57a5b
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:12c0067f3fd3f132f269a9651d5036df45f87a8361ecd702aae6ad0ee991c46b
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/production-code-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:2a199d6ea16b09437618f4a999e2a7b38403d7480bcb1dfa3f9178c4d30249e9
+    note: Referenced support file: shared/checklists/production-code-checklist.md
+  - path: shared/checklists/production-readiness-audit-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:6eaf75a3e8394f8df8c3ec870faa4624a007708b3d938bf66f01bb7e4463ec5a
+    note: Referenced support file: shared/checklists/production-readiness-audit-checklist.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:0cc305d66066877293789cac0a56fe39d579f9c5a19dacbe876ce13c2f839ca6
+    note: Referenced support file: tests/smoke.md

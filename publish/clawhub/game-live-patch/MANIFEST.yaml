@@ -1,0 +1,68 @@
+bundle: game-live-patch
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Use when the repo is shipped or live-risky. This skill narrows changes, documents blast radius and rollback, and prioritizes safety over broad cleanup.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:7ae066cf958e1fb026a900ae5a6f04e9d080d0311400b4287141d134ce5daad8
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:552c860539482d78841aa9dd9074ace5641cae2fac860199b9c28eeb4c513542
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:ab37ce38ea058138d48f19d981126eda7e25981da320fa3c03a741d56d402c76
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:a5dbc5bedf3406f112a1ed9ddf8f9c56910e9a226965899e04506eb458fee56b
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/live-patch-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:96f503a501e7ee699e86b064ac32f58c897e7e98a0f6ad3fed8bfd30eeabdf3d
+    note: Referenced support file: shared/checklists/live-patch-checklist.md
+  - path: shared/templates/release-safety.md
+    role: reference
+    version: 1
+    hash: sha256:7a8a408babe62fda67437f535361ec3f72841f384c6c1dcd02f178c149bc4661
+    note: Referenced support file: shared/templates/release-safety.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:11d2e3e01645e875aebe41d6f9f623636bb9842841d3275be216b231e617ab08
+    note: Referenced support file: tests/smoke.md

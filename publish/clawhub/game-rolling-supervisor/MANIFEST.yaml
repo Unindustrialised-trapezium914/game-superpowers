@@ -1,0 +1,78 @@
+bundle: game-rolling-supervisor
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Enable a guarded external rolling build/verify/repair loop for high-autonomy game development. Use when the task is too large for one clean session and broad changes are allowed.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:b0f178047f378f871c81c79c883687505a653b744e52b904005e7c97846777e8
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:e0b5f3f6596ee20e68c1c1c1e12337d0a3ed02f07375f2d33c0b90ec833b2799
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:85530bce6cb525cf7676f246bb56341fc9065fac30b4619d72939dd825cc49d4
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:c4fc5ff27fa8cae6a0a3862b5b712cdbf7b6843fab33015549bf0e284f0abbc8
+    note: Referenced support file: examples/usage.md
+  - path: schemas/rolling-state.schema.json
+    role: reference
+    version: 1
+    hash: sha256:afbafbdbd5555c0b2d33b94740d3dc57ddd6614746e747e633a7304037a7a940
+    note: Referenced support file: schemas/rolling-state.schema.json
+  - path: schemas/session-result.schema.json
+    role: reference
+    version: 1
+    hash: sha256:068a86a07b0779f17cae8b0401ae77659730c1b5af19503d8b779ad5078b599a
+    note: Referenced support file: schemas/session-result.schema.json
+  - path: shared/reference/rolling-supervisor-architecture.md
+    role: reference
+    version: 1
+    hash: sha256:88524c3adfb53a6e6c533e86d744c4f858b3d3ba02bc3f45d93a5990e906d0fb
+    note: Referenced support file: shared/reference/rolling-supervisor-architecture.md
+  - path: shared/templates/rolling-supervisor-plan.md
+    role: reference
+    version: 1
+    hash: sha256:4fede22855fa9e0cf289db15092d5534b955c112e0441602a9f526b50bac2668
+    note: Referenced support file: shared/templates/rolling-supervisor-plan.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:0e0e748504dbbb62c7fa5b64a12664bb561e7e2baee1a436aa5daa52d1c82abd
+    note: Referenced support file: tests/smoke.md

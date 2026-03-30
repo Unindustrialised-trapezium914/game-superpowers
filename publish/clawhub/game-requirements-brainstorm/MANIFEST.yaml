@@ -1,0 +1,68 @@
+bundle: game-requirements-brainstorm
+bundle_version: 1.1.0
+bundle_date: 2026-03-30
+description: >
+  Use when the request is vague, contradictory, or too under-specified to build a strong game result. Turn the request into a concise production-ready requirement brief without getting stuck in endless ideation.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:bdd526c888c4208a5f95a36251e043cf119fbbdc97b0f652519c772937f95fbc
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:9505110bd1bb979d6aa5e2fa0e1cc676e26331e82ba93432b03eda0b99349a3b
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:ea64599cb777e19f4c27798e5cc8de7b5830752b17039447c7fbae8cf84b140e
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:90a5087319dd3c6482b72e314bc3d861d1a3552a966b46ae2ee40c3eda28f482
+    note: Referenced support file: examples/usage.md
+  - path: shared/templates/quality-target.md
+    role: reference
+    version: 1
+    hash: sha256:85d1340211bfbe36074c8da9b2a2ff2fecd0f2f899c3ef72a121414210e9d005
+    note: Referenced support file: shared/templates/quality-target.md
+  - path: shared/templates/requirements-brief.md
+    role: reference
+    version: 1
+    hash: sha256:b1fb840e9ff8d13bdc7d915f3a4a9982da86158b16dbcb5b7b96f24d2482e441
+    note: Referenced support file: shared/templates/requirements-brief.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:2ed04c6f3897563d4549f7e6e8aaa338e047850592b864ed9916f66283ca7eb2
+    note: Referenced support file: tests/smoke.md

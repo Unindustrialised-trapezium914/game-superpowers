@@ -1,0 +1,73 @@
+bundle: game-ux-flow-designer
+bundle_version: 1.1.1
+bundle_date: 2026-03-30
+description: >
+  Design the interaction and interface flow before or alongside implementation. Focus on the first minutes, clarity, menus, onboarding, and feedback so the game feels understandable and intentional.
+compatibility:
+  designed_for:
+    surfaces:
+      - chat
+      - cli
+      - ide
+    capabilities:
+      - local filesystem access
+      - markdown skill bundles
+      - reusable game-development workflows
+  tested_on:
+    - platform: OpenClaw
+      surface: ClawHub
+      status: pending
+      date: 2026-03-30
+    - platform: Claude Code
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+    - platform: Codex
+      surface: CLI
+      status: pass
+      date: 2026-03-30
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+dependencies:
+  []
+files:
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:630f725b31351d09c124b1d2b44a3cb2a5f87416a574eda34f11b5914e19a92b
+    note: Bundle release notes
+  - path: README.md
+    role: reference
+    version: 1
+    hash: sha256:d17f554cabfa13493f8a8eb0b809f84358a9c9ae156649cf47c5499033098299
+    note: ClawHub-facing usage and context
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:c3dd44ee25d545b048f00d2252ab9c90b79e4b17fec5bd3862c07d73cdbb102a
+    note: Canonical skill definition for this publish bundle
+  - path: examples/usage.md
+    role: reference
+    version: 1
+    hash: sha256:800c9fc085ee10456f6b6eb2e656d8057857b0fb546435641218f1c19edbed32
+    note: Referenced support file: examples/usage.md
+  - path: shared/checklists/ui-feedback-checklist.md
+    role: reference
+    version: 1
+    hash: sha256:da18b2f79f8d462787825c2a455b068dce70bf7792fb9b60c4c521284aa20313
+    note: Referenced support file: shared/checklists/ui-feedback-checklist.md
+  - path: shared/checklists/ui-ux-hard-rules.md
+    role: reference
+    version: 1
+    hash: sha256:765a241603ce1dee5d0bdf8481094c289b7066338c693d9f5b83d5169a773172
+    note: Referenced support file: shared/checklists/ui-ux-hard-rules.md
+  - path: shared/reference/first-30-seconds.md
+    role: reference
+    version: 1
+    hash: sha256:6003c693614c568cf0c2f66932ceb17075832743408d34deaf13c9fd2cc4bb99
+    note: Referenced support file: shared/reference/first-30-seconds.md
+  - path: tests/smoke.md
+    role: reference
+    version: 1
+    hash: sha256:ba0e5bf7e08866755ed5249ed9eb60265350286bbc59b3e2df95891f33c96f48
+    note: Referenced support file: tests/smoke.md
