@@ -1,12 +1,6 @@
 ---
 name: game-audit-scorecard
-description: Summarize audit findings into a structured multi-dimensional scorecard for UI/UX, feedback, mechanics, scope completeness, maintainability, and live risk.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when converting game audit findings into a structured multi-axis scorecard."
 ---
 
 # Game Audit Scorecard
@@ -16,7 +10,7 @@ Normalize audit findings into a structured scorecard that future sessions can re
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present the scorecard and summary in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/scorecard.json` and `docs/game-studio/audit/audit-summary.md`.
 

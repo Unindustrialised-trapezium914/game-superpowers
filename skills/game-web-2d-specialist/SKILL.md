@@ -1,12 +1,6 @@
 ---
 name: game-web-2d-specialist
-description: Apply concrete browser 2D implementation guidance after backend selection. Use this when the project is web-first and the chosen route is 2D UI-first or 2D world-first.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.2.0"
-  domain: game-development
+description: "Use when implementing browser-first 2D game work after the route and backend are already chosen."
 ---
 
 # Game Web 2D Specialist
@@ -16,7 +10,7 @@ Turn a backend decision into concrete browser 2D implementation guidance without
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present 2D implementation guidance in conversation.
 - **minimal** or **full**: write or update `docs/game-studio/backend-implementation.md`.
 
@@ -43,14 +37,14 @@ Respect the output strategy set by `using-game-superpowers`:
 Be concrete about architecture patterns, layering, and tradeoffs.
 Do not pretend the backend is irrelevant once the route is chosen.
 Do not begin implementation if the gameplay shape is still ambiguous.
-If the request is primarily about Douyin H5 Interactive platform shell, portrait H5 delivery shape, app-shell structure, or requests phrased as `抖音互动空间` / `抖音互动H5`, route through `game-douyin-h5-interactive` first.
+If the request is primarily about Douyin H5 Interactive platform shell, portrait H5 delivery shape, app-shell structure, or requests phrased as `抖音互动空间` / `抖音互动H5`, route through `game-douyin-h5` first.
 
-Before coding, confirm or inherit all of these:
+Before coding, confirm or inherit:
 - camera / presentation model
 - movement grammar
 - obstacle or enemy grammar
 - fail and restart loop
 - HUD priority
 
-For archetypes like `runner`, `platformer`, `survivor`, or `breakout`, explicitly lock the subtype first.
-Example: `runner` is not specific enough by itself. Decide whether it is lane-based, side-view platform, or top-down dodge before implementation begins.
+For archetypes like `runner`, `platformer`, `survivor`, or `breakout`, lock the subtype first.
+Example: `runner` alone is not specific enough. Decide whether it is lane-based, side-view platform, or top-down dodge before implementation.

@@ -1,12 +1,6 @@
 ---
 name: game-feel-audit
-description: Audit game feel and responsiveness based on control paths, timing assumptions, animation hooks, camera reactions, and feedback cues.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing control feel, responsiveness, timing, camera reaction, or animation feedback in a game."
 ---
 
 # Game Feel Audit
@@ -16,7 +10,7 @@ Audit whether the game seems responsive, readable, and satisfying rather than me
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`, `docs/game-studio/audit/ux-findings.md`.
 

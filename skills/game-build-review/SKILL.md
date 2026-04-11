@@ -1,12 +1,6 @@
 ---
 name: game-build-review
-description: Review an in-progress or freshly built game implementation against the locked concept, brief, and plan before runtime verification or completion is claimed.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access plus repo context and recent implementation evidence.
-metadata:
-  author: game-superpowers
-  version: "1.0.0"
-  domain: game-development
+description: "Use when reviewing a built or in-progress game against the locked brief before claiming completion."
 ---
 
 # Game Build Review
@@ -16,7 +10,7 @@ Default review stage between implementation and runtime verification. Catch shap
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present review findings in conversation.
 - **minimal** or **full**: write `docs/game-studio/build-review.md`.
 

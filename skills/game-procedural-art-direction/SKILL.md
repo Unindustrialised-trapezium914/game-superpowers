@@ -1,12 +1,6 @@
 ---
 name: game-procedural-art-direction
-description: Define and implement procedural art direction for the current build target. Use when visual identity, shader recipes, SVG systems, particles, or UI recipes are part of the requested value, not just optional polish.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when procedural visual identity, shaders, particles, SVG systems, or UI recipes are part of the game deliverable."
 ---
 
 # Game Procedural Art Direction
@@ -27,6 +21,6 @@ Make the build visually intentional through programmable systems.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present visual direction decisions in conversation.
 - **minimal** or **full**: update `docs/game-studio/spec.md` or `docs/game-studio/ux-flow.md` if visual rules or UI behavior change materially.

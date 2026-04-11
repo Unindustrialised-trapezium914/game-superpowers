@@ -1,12 +1,6 @@
 ---
 name: game-build-strategy
-description: Decide the AI-native development mode, quality target, task granularity, and refactor policy based on project state and user intent. This skill prevents both over-cautious iteration and reckless live-product rewrites.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.3.0"
-  domain: game-development
+description: "Use when deciding development mode, quality target, task granularity, or refactor policy for game work."
 ---
 
 # Game Build Strategy
@@ -16,7 +10,7 @@ Choose the right build strategy for the project.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present build strategy and quality target in conversation.
 - **minimal** or **full**: write `docs/game-studio/build-strategy.md` and `docs/game-studio/quality-target.md`.
 
@@ -50,7 +44,7 @@ Match task size to the mode:
 - production-feature work can use medium coherent chunks
 - live work should use smaller changes with tighter verification
 
-Also choose the exploration budget explicitly:
+Choose the exploration budget explicitly:
 - `minimal` when the task is narrow and already shape-locked
 - `standard` for normal product work
 - `high` for single-prompt showcase generation, benchmark runs, or any task where first-result quality matters more than token thrift
@@ -65,6 +59,4 @@ For `high` exploration budget work:
 ## Guardrail
 Do not let “safe” planning ruin the result on low-risk greenfield work.
 Do not let “fast” planning justify broad rewrites on live products.
-
 For benchmark or showcase builds, do not optimize for token thrift if that weakens the result.
-It is acceptable to spend more tokens on sharper concept lock, stronger implementation review, and explicit verification when the user is comparing output quality.

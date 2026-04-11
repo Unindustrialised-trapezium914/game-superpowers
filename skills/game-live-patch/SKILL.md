@@ -1,12 +1,6 @@
 ---
 name: game-live-patch
-description: Use when the repo is shipped or live-risky. This skill narrows changes, documents blast radius and rollback, and prioritizes safety over broad cleanup.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build/test access improves verification.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when patching a shipped or live-risky game and changes must stay narrow and rollback-aware."
 ---
 
 # Game Live Patch
@@ -16,7 +10,7 @@ Make a safe, reversible, production-minded change in a shipped or operationally 
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/release-safety.md`, `docs/game-studio/quality-report.md`.
 

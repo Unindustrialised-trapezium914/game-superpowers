@@ -1,12 +1,6 @@
 ---
 name: game-ux-flow-audit
-description: Audit first-30-seconds flow, onboarding, fail/retry loops, navigation clarity, and player understanding in an existing game project.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing first-minute onboarding, menus, fail/retry flow, or player comprehension in a game."
 ---
 
 # Game UX Flow Audit
@@ -16,7 +10,7 @@ Audit the player journey and moment-to-moment experience flow, especially the fi
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/ux-findings.md`, `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`.
 

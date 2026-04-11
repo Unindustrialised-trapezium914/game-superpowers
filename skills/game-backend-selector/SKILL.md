@@ -1,12 +1,6 @@
 ---
 name: game-backend-selector
-description: Choose or compare backend profiles based on required capabilities, project state, and quality target. Stay stack-neutral at the top level while still giving sharp recommendations and tradeoffs.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when choosing a backend profile for a game based on capabilities, project state, and quality target."
 ---
 
 # Game Backend Selector
@@ -17,7 +11,7 @@ Use `../../shared/reference/backend-profiles.md`.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present backend decisions in conversation.
 - **minimal** or **full**: write `docs/game-studio/backend-decision.md`.
 

@@ -1,12 +1,6 @@
 ---
 name: game-playability-verifier
-description: Verify the build against the chosen quality target. Check bootability, interaction, UX, requested feature completeness, and regressions before success is claimed.
-license: MIT
-compatibility: Claude Code and Codex. Best results with shell/build/run access plus file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.2.0"
-  domain: game-development
+description: "Use when verifying a game build against its quality target before claiming it is complete."
 ---
 
 # Game Playability Verifier
@@ -16,7 +10,7 @@ Verify the build against its **actual target**, not a generic low bar.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present verification results in conversation.
 - **minimal** or **full**: write `docs/game-studio/quality-report.md`.
 

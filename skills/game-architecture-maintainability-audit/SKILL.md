@@ -1,12 +1,6 @@
 ---
 name: game-architecture-maintainability-audit
-description: Audit architecture, state management, boundaries, coupling, and maintainability risks that will make future AI or human iteration harder.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing structure, boundaries, coupling, or state-management risks in an existing game project."
 ---
 
 # Game Architecture Maintainability Audit
@@ -16,7 +10,7 @@ Audit technical structure and changeability, especially where future iteration w
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`, `docs/game-studio/audit/risk-register.md`.
 

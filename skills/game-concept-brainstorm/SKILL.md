@@ -1,12 +1,6 @@
 ---
 name: game-concept-brainstorm
-description: Turn a vague game idea into a sharp fantasy, design pillars, player verbs, and acceptance bar before implementation begins. This is the proper “brainstorm” stage, not endless ideation.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.3.0"
-  domain: game-development
+description: "Use when a game idea is still vague and needs pillars, verbs, and an acceptance bar before implementation."
 ---
 
 # Game Concept Brainstorm
@@ -16,7 +10,7 @@ Lock the game fantasy before architecture or implementation.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present concept brainstorm and requirements in conversation.
 - **minimal** or **full**: write `docs/game-studio/concept-brainstorm.md` and `docs/game-studio/requirements.md`.
 

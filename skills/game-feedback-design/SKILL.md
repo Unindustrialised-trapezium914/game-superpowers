@@ -1,12 +1,6 @@
 ---
 name: game-feedback-design
-description: Design the game’s feedback grammar across visuals, audio, motion, danger signaling, reward signaling, and UI acknowledgment so the result feels alive rather than placeholder-level.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access helps when previewing.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when designing a game's visual, motion, audio, or UI feedback grammar."
 ---
 
 # Game Feedback Design
@@ -16,7 +10,7 @@ Make feedback part of the design, not something bolted on at the end.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present feedback design in conversation.
 - **minimal** or **full**: write `docs/game-studio/feedback-design.md`.
 

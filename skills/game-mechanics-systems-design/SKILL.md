@@ -1,12 +1,6 @@
 ---
 name: game-mechanics-systems-design
-description: Translate the concept, UX flow, and quality target into game-native systems such as core loop, state model, progression, encounter logic, save boundaries, and sound ownership. Use when the build needs more than a vague architecture sketch.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when translating a locked concept into concrete game systems, progression, state, and encounter rules."
 ---
 
 # Game Mechanics Systems Design
@@ -16,7 +10,7 @@ Turn the concept into a concrete systems design that game developers can reason 
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present systems design in conversation.
 - **minimal** or **full**: write `docs/game-studio/system-design.md`.
 

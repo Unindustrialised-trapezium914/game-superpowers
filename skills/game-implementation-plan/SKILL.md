@@ -1,12 +1,6 @@
 ---
 name: game-implementation-plan
-description: Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.2.0"
-  domain: game-development
+description: "Use when turning an approved game brief into verifiable implementation tasks matched to the chosen build mode."
 ---
 
 # Game Implementation Plan
@@ -16,7 +10,7 @@ Use `../../shared/templates/task-plan.md`.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present implementation plan in conversation.
 - **minimal** or **full**: write `docs/game-studio/plan.md`.
 

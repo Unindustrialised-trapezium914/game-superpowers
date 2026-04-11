@@ -1,12 +1,6 @@
 ---
 name: game-audio-feedback-audit
-description: "Audit the project's audio layer as UX feedback: UI sounds, success/failure signals, danger cues, layering, and semantic sound priorities."
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing UI sounds, reward/failure cues, danger cues, or audio feedback layering in a game."
 ---
 
 # Game Audio Feedback Audit
@@ -16,7 +10,7 @@ Audit audio as part of the feedback grammar rather than as a late cosmetic layer
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/ux-findings.md`, `docs/game-studio/audit/scorecard.json`.
 

@@ -1,12 +1,6 @@
 ---
 name: game-project-state-assessment
-description: Use before major game work begins. Inspect the repo and request to classify the project as greenfield, prelaunch iteration, shipped product, or live-risky work. This determines whether aggressive AI-native development is appropriate.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell access helps inspect builds and repo state.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use before major game work to classify the repo as greenfield, prelaunch, shipped, or live-risky."
 ---
 
 # Game Project State Assessment
@@ -16,7 +10,7 @@ Determine what kind of project this is **before** choosing scope, architecture, 
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present project state assessment in conversation.
 - **minimal** or **full**: write `docs/game-studio/project-state.md` using `../../shared/templates/project-state-assessment.md`.
 

@@ -1,12 +1,6 @@
 ---
 name: game-requirements-brainstorm
-description: Use when the request is vague, contradictory, or too under-specified to build a strong game result. Turn the request into a concise production-ready requirement brief without getting stuck in endless ideation.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.2.0"
-  domain: game-development
+description: "Use when a game request is vague, contradictory, or under-specified and needs a production-ready brief."
 ---
 
 # Game Requirements Brainstorm
@@ -16,7 +10,7 @@ Turn the request into a requirement set that is specific enough to build a stron
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present requirements and quality target in conversation.
 - **minimal** or **full**: write `docs/game-studio/requirements.md` and `docs/game-studio/quality-target.md`.
 

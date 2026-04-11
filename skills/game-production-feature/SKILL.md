@@ -1,12 +1,6 @@
 ---
 name: game-production-feature
-description: Use when the requested outcome should land as a maintainable product-grade feature rather than a prototype. This skill protects completeness, integration quality, and verification discipline.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build/test access improves results.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when a requested game feature should land as a maintainable product-grade feature, not a prototype slice."
 ---
 
 # Game Production Feature
@@ -29,7 +23,7 @@ Use:
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present quality target updates in conversation.
 - **minimal** or **full**: write or update `docs/game-studio/quality-target.md`.
 

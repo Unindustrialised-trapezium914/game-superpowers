@@ -1,12 +1,6 @@
 ---
 name: game-project-audit
-description: Top-level audit skill for existing game projects. Use it to run a read-first, multi-dimensional audit covering UI/UX, feedback, mechanics, completeness, maintainability, and live risk before any repair work.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when running a top-level audit of an existing game project before repair or major changes."
 ---
 
 # Game Project Audit
@@ -22,10 +16,10 @@ Default to **read-only first**.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present all findings, scorecard, and repair directions in conversation. Do not create `docs/` files.
 - **minimal**: write only `audit-summary.md` for cross-session reference.
-- **full**: create and maintain all files listed below.
+- **full**: create and maintain the audit summary, scorecard, UX findings, repair roadmap, and risk register files listed below.
 
 Full output files (when strategy = full):
 - `docs/game-studio/audit/audit-summary.md`
@@ -46,8 +40,7 @@ Use:
 - `../../shared/reference/audit-confidence-and-evidence.md`
 
 ## Audit workflow
-1. Assess project state and release risk.
-   - Use `game-project-state-assessment`.
+1. Assess project state and release risk with `game-project-state-assessment`.
 2. Determine audit mode and focus dimensions.
 3. Run the relevant sub-audits:
    - `game-ux-flow-audit`
@@ -62,7 +55,7 @@ Use:
    - `game-live-risk-audit` when the repo is shipped or high-risk
 4. Consolidate findings with `game-audit-scorecard`.
 5. If requested, create a prioritized fix plan with `game-repair-roadmap`.
-6. Only patch after the audit report is written and the requested mode allows edits.
+6. Patch only after the audit report exists and the requested mode allows edits.
 
 ## Rules
 - Never start by changing files when the request is clearly an audit.

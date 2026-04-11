@@ -1,12 +1,6 @@
 ---
 name: game-subagent-build-loop
-description: Use when the build should default to a builder plus reviewer plus verifier subagent loop instead of a single monolithic implementation pass.
-license: MIT
-compatibility: Claude Code and Codex. Best results with host-supported subagents, file read/write access, and runtime verification ability.
-metadata:
-  author: game-superpowers
-  version: "1.0.0"
-  domain: game-development
+description: "Use when game implementation should default to a builder-reviewer-verifier loop instead of one monolithic pass."
 ---
 
 # Game Subagent Build Loop
@@ -17,7 +11,7 @@ The goal is stronger and more stable output from one user prompt, not thrift.
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present subagent build loop plan in conversation.
 - **minimal** or **full**: write `docs/game-studio/subagent-build-loop.md`.
 

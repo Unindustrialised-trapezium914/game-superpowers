@@ -1,12 +1,6 @@
 ---
 name: game-feedback-audit
-description: "Audit interaction feedback quality: input acknowledgment, hit/collect/reward/failure signaling, danger telegraphing, and state-transition clarity."
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing responsiveness, rewards, failures, danger telegraphing, or state-transition feedback in a game."
 ---
 
 # Game Feedback Audit
@@ -16,7 +10,7 @@ Audit whether the game clearly responds to the player and communicates consequen
 
 ## Outputs
 
-Respect the output strategy set by `using-game-superpowers`:
+Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present findings in conversation.
 - **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/ux-findings.md`, `docs/game-studio/audit/scorecard.json`.
 
