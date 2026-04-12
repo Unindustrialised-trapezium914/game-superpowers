@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Choose or compare backend profiles based on required capabilities, project state, and quality target. Stay stack-neutral at the top level while still giving sharp recommendations and tradeoffs.
+Use when choosing a backend profile for a game based on capabilities, project state, and quality target.
 
 ## Recommended usage
 
@@ -16,6 +16,7 @@ Choose or compare backend profiles based on required capabilities, project state
 
 - `game-web-2d-specialist`
 - `game-web-3d-specialist`
+- `using-game-superpowers`
 
 ## Source of truth
 

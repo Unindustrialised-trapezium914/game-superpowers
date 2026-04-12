@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit risk in shipped or high-risk projects: rollback danger, compatibility hazards, state corruption, operational blast radius, and should-not-touch areas.
+Use when auditing rollback, compatibility, corruption, or operational risks in a shipped or live-risky game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit risk in shipped or high-risk projects: rollback danger, compatibility haza
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use before major game work begins. Inspect the repo and request to classify the project as greenfield, prelaunch iteration, shipped product, or live-risky work. This determines whether aggressive AI-native development is appropriate.
+  Use before major game work to classify the repo as greenfield, prelaunch, shipped, or live-risky.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:83bdcd2ddcc86c32effb4744fa17b6ced8b0d1b49a2bf4d54509934c6b7ba660
+    hash: sha256:f89aa3e48fb65b738bc1371fe5429086684cc4ece7b97ce12b57c617dc6d5c0c
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:77a915bf530a56a6830ea15dfc020778a83707ed83ac795186db18842f2fdbba
+    hash: sha256:62b67edbac46ebb4ddaf2d1b56cb8df4489980b5dcd95ae04bb6433c26128819
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:f4943cbae81a35163a1b1c0a266fe96a337bcbfd5f8d2e18f4a7da51dc2cdbbf
+    hash: sha256:2fa60124af19c4734314c5f2a58e9b6d657b2687fa5fc340e8fa5e883acfd3f6
     note: Referenced support file: tests/smoke.md

@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Turn a vague game idea into a sharp fantasy, design pillars, player verbs, and acceptance bar before implementation begins. This is the proper “brainstorm” stage, not endless ideation.
+Use when a game idea is still vague and needs pillars, verbs, and an acceptance bar before implementation.
 
 ## Recommended usage
 
@@ -17,6 +17,7 @@ Turn a vague game idea into a sharp fantasy, design pillars, player verbs, and a
 - `game-requirements-brainstorm`
 - `game-scope-profile`
 - `game-ux-flow-designer`
+- `using-game-superpowers`
 
 ## Source of truth
 

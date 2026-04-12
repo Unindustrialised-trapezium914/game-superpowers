@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit whether the project matches its intended scope and quality target, and identify fake-complete vs actually-complete features.
+  Use when auditing whether delivered features actually match the promised scope and quality target.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:8691f0bd6439cba3c168a824b2df792c43586b0c5e6a000742bdff908544d623
+    hash: sha256:8283320713a2f97b5d374483278a551443b0ae0fa5bf0b08b138412d7ea3476f
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:36cca559e09fa2b50c70a6d8435feac66bd16e31af5bca350c6e49f92827202b
+    hash: sha256:378f87b08cbb99ce2e6b9fe3f13eb81e0e05c719e179a9e274a8b03b48cf60cf
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:619a644a4281024af654f236898237063c0d64e5efae6adb22a97e8a08e9e66c
+    hash: sha256:3d1bbb271c091a93a0e93feaf9c0e4d2171a71ba31fd0e3ac03a8f0d91747d48
     note: Referenced support file: tests/smoke.md

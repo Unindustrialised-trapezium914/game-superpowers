@@ -18,7 +18,7 @@ Default to **read-only first**.
 
 Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present all findings, scorecard, and repair directions in conversation. Do not create `docs/` files.
-- **minimal**: write only `audit-summary.md` for cross-session reference.
+- **minimal**: write only `docs/game-studio/audit/audit-summary.md` for cross-session reference.
 - **full**: create and maintain the audit summary, scorecard, UX findings, repair roadmap, and risk register files listed below.
 
 Full output files (when strategy = full):

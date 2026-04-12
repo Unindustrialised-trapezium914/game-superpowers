@@ -12,4 +12,4 @@ Use `using-game-superpowers` on a fitting game-development task.
 - The agent recognizes the skill's stated purpose.
 - The agent uses packaged references when `SKILL.md` points to `./shared/...`.
 - The agent does not claim companion skills are bundled implicitly when they are separate installs.
-- Companion skills referenced in this bundle: game-architecture-maintainability-audit, game-audio-feedback-audit, game-audit-scorecard, game-build-strategy, game-concept-brainstorm, game-feedback-audit, game-feedback-design, game-feel-audit
+- Companion skills referenced in this bundle: game-architecture-maintainability-audit, game-audio-feedback-audit, game-audit-scorecard, game-build-review, game-build-strategy, game-concept-brainstorm, game-douyin-h5, game-feedback-audit

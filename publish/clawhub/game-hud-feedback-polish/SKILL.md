@@ -1,12 +1,6 @@
 ---
 name: game-hud-feedback-polish
-description: Improve UI clarity, micro-feedback, pacing, feel, and critical affordances so the result feels intentional rather than dead or placeholder-level.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when polishing HUD clarity, affordances, pacing, or micro-feedback in a working game."
 ---
 
 # Game HUD Feedback Polish

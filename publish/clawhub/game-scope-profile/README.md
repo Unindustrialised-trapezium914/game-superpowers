@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Set the game scope tier, completeness bar, and allowed refactor range so the agent neither underbuilds nor gets lost in endless overbuilding.
+Use when setting scope tier, completeness bar, and allowed refactor range for a game build.
 
 ## Recommended usage
 
@@ -15,6 +15,7 @@ Set the game scope tier, completeness bar, and allowed refactor range so the age
 ## Companion skills
 
 - `game-scope-guard`
+- `using-game-superpowers`
 
 ## Source of truth
 

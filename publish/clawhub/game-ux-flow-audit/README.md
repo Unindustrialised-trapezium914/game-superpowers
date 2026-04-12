@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit first-30-seconds flow, onboarding, fail/retry loops, navigation clarity, and player understanding in an existing game project.
+Use when auditing first-minute onboarding, menus, fail/retry flow, or player comprehension in a game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit first-30-seconds flow, onboarding, fail/retry loops, navigation clarity, a
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

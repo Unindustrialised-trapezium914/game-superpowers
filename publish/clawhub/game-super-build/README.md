@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use as the top-level orchestration skill for serious game work. It decides project state, locks concept and scope, chooses an AI-native build mode, sets the quality target, and routes the rest of the workflow. This is the main “skills of skills” entry point.
+Use when orchestrating serious game work across concept, scope, build mode, quality target, and downstream routing.
 
 ## Recommended usage
 
@@ -15,8 +15,10 @@ Use as the top-level orchestration skill for serious game work. It decides proje
 ## Companion skills
 
 - `game-backend-selector`
+- `game-build-review`
 - `game-build-strategy`
 - `game-concept-brainstorm`
+- `game-douyin-h5`
 - `game-feedback-design`
 - `game-implementation-plan`
 - `game-mechanics-systems-design`
@@ -27,7 +29,9 @@ Use as the top-level orchestration skill for serious game work. It decides proje
 - `game-requirements-brainstorm`
 - `game-scope-profile`
 - `game-screenshot-critic`
+- `game-subagent-build-loop`
 - `game-ux-flow-designer`
+- `using-game-superpowers`
 
 ## Source of truth
 

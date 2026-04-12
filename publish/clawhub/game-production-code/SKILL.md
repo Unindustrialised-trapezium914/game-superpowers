@@ -1,12 +1,6 @@
 ---
 name: game-production-code
-description: Apply production-grade code expectations to game work. Use when the build should be maintainable, understandable, and safe enough to extend, not merely hacked together for a one-off demo.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when game implementation quality must be maintainable, understandable, and safe to extend."
 ---
 
 # Game Production Code
@@ -28,5 +22,8 @@ Use:
 - Keep the code readable for the next developer or next session.
 - If refactoring, document compatibility and rollback concerns.
 
-## Deliverable
-Update `docs/game-studio/architecture.md` and `docs/game-studio/quality-target.md` if needed so the production-quality expectations are explicit.
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present production code expectations in conversation.
+- **minimal** or **full**: update `docs/game-studio/architecture.md` and `docs/game-studio/quality-target.md`.

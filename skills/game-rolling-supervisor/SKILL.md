@@ -20,13 +20,8 @@ Use:
 - `../../schemas/rolling-state.schema.json`
 - `../../schemas/session-result.schema.json`
 
-## When to use
-- the user wants high-autonomy end-to-end generation
-- the target is bigger than a single clean session
-- the repo can tolerate multiple build/verify/repair cycles
-- broad changes are allowed or the build is greenfield
-
 ## Rules
+- use this only when the repo can tolerate repeated build/verify/repair cycles
 - prefer **short-lived worker sessions** over one giant session
 - every worker must emit a compact structured handoff
 - verification gates decide whether to continue

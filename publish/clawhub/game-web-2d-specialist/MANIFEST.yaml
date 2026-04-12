@@ -1,9 +1,9 @@
 bundle: game-web-2d-specialist
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Apply concrete browser 2D implementation guidance after backend selection. Use this when the project is web-first and the chosen route is 2D UI-first or 2D world-first.
+  Use when implementing browser-first 2D game work after the route and backend are already chosen.
 compatibility:
   designed_for:
     surfaces:
@@ -30,22 +30,23 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - game-douyin-h5
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:f9021c2882b532329121fe3c0c181cc0da812002d3eaa18b96bc66cec786f235
+    hash: sha256:583eae15023581e1b2b99deac7e3a60e454da951e582dbc2ca0cfb2b80aa48db
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:766a67cf50d6bbc7c5d5fad8452e5015c70a3f816ad8396a9aeaa9542458e78f
+    hash: sha256:11e0c53bce5a1adb7a4c96887b80cfba0e914868af2718e0c79c9a5b9c0dedbc
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:4615f2bbb15a61bbd2232af366de0f89c6f2df063de7424eba52401e0ea33bba
+    hash: sha256:bea537d83b0b5adea7a1cc00211d4f3b9bf113d989f3b1408fcaa55e99ff08bb
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +71,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:5516b1ab6e5a8170ec891f92c4c3260373ae1e5aee796206bd3a9cae2c10cf38
+    hash: sha256:8892f119bcedbed973575e620c421b063d709901a7d6b7971b119a578134126b
     note: Referenced support file: tests/smoke.md

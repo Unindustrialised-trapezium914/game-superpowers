@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Top-level audit skill for existing game projects. Use it to run a read-first, multi-dimensional audit covering UI/UX, feedback, mechanics, completeness, maintainability, and live risk before any repair work.
+Use when running a top-level audit of an existing game project before repair or major changes.
 
 ## Recommended usage
 
@@ -27,6 +27,7 @@ Top-level audit skill for existing game projects. Use it to run a read-first, mu
 - `game-repair-roadmap`
 - `game-scope-completeness-audit`
 - `game-ux-flow-audit`
+- `using-game-superpowers`
 
 ## Source of truth
 

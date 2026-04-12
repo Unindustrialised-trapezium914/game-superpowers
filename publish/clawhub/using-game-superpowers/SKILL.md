@@ -1,77 +1,71 @@
 ---
 name: using-game-superpowers
-description: "Use when the task is about building, auditing, or improving a game project with this Game Superpowers skill collection. Acts as the collection bootstrap skill: classify the request, choose the right specialized game skills, and coordinate them instead of trying to solve the entire task ad hoc."
+description: "Use when a request needs routing across this Game Superpowers collection for build, audit, repair, or polish work."
 ---
 # Using Game Superpowers
 
-Use this skill as the collection entrypoint for the Game Superpowers library.
-
-## Purpose
-
-This skill does not replace specialized skills. It decides **which Game Superpowers skills should be used next** and in what order.
-
-## When to use
-
-Use this skill when the request involves any of the following:
-- designing or building a new game feature or prototype
-- auditing an existing game project
-- improving game UI/UX, feedback, flow, or feel
-- planning scope, production readiness, or live-safe changes
-- choosing between build, audit, repair, and polish tracks
+Collection entrypoint. Classify the request, then route explicitly.
 
 ## Classification
 
-First classify the request into one of these tracks:
-1. **Build track** — new project work, large feature work, prototype work, vertical slice work
-2. **Audit track** — existing project diagnosis, read-only review, risk assessment, UX review
-3. **Repair track** — user wants targeted fixes after diagnosis
-4. **Polish track** — user already has working gameplay and wants better feel, UI/UX, feedback, or production quality
+- **Build** — new project, prototype, feature, vertical slice
+- **Audit** — diagnosis, read-only review, risk or UX review
+- **Repair** — targeted fixes after diagnosis
+- **Polish** — working game, better feel / UX / feedback / quality
 
-Also classify project state:
+Project state:
 - `greenfield`
-- `existing-prelaunch`
+- `prelaunch`
+- `shipped`
 - `live-risky`
 
-## Required routing behavior
+## Output strategy
 
-### For greenfield or large new work
-Start with:
-- `game-concept-brainstorm` if fantasy / goals are unclear
+Choose one before invoking downstream skills:
+- **inline** (default) — keep findings and plans in conversation; do not write `docs/`.
+- **minimal** — persist only the small set of files needed for cross-session continuity.
+- **full** — write all requested docs artifacts.
+
+Default to **inline** unless the user explicitly wants docs or the project clearly needs them. This overrides downstream defaults.
+
+## Routing
+
+### Build
+- `game-concept-brainstorm` when fantasy or goals are unclear, and by default for one-prompt generation, showcase builds, benchmark runs, or archetype-led requests such as `runner`, `platformer`, `survivor`, `shooter`, `breakout`, `fps`, `dungeon crawler`, or `arena`
 - `game-scope-profile`
 - `game-build-strategy`
 - `game-super-build`
 
-Then route into whichever of these are needed:
-- `game-ux-flow-designer`
-- `game-feedback-design`
-- `game-loop-bootstrap`
-- `game-mechanics-systems-design`
-- `game-web-2d-specialist`
-- `game-web-3d-specialist`
-- `game-polished-prototype`
-- `game-production-feature`
+Add as needed:
+- `game-douyin-h5` for explicit Douyin-style portrait H5 delivery
+- `game-ux-flow-designer`, `game-feedback-design`
+- `game-loop-bootstrap`, `game-mechanics-systems-design`
+- `game-build-review`, `game-subagent-build-loop`
+- `game-web-2d-specialist`, `game-web-3d-specialist`
+- `game-polished-prototype`, `game-production-feature`
 
-### For existing projects and audits
-Start with:
+### Audit
 - `game-project-state-assessment`
 - `game-project-audit`
-
-Then load relevant audit skills such as:
-- `game-ux-flow-audit`
-- `game-hud-readability-audit`
-- `game-feedback-audit`
-- `game-audio-feedback-audit`
-- `game-feel-audit`
-- `game-mechanics-systems-audit`
-- `game-scope-completeness-audit`
-- `game-production-readiness-audit`
-- `game-architecture-maintainability-audit`
-- `game-live-risk-audit`
 - `game-audit-scorecard`
 - `game-repair-roadmap`
 
-### For polishing or quality uplift
-Bias toward:
+Add the matching audit skills:
+- `game-ux-flow-audit`, `game-hud-readability-audit`
+- `game-feedback-audit`, `game-audio-feedback-audit`, `game-feel-audit`
+- `game-mechanics-systems-audit`, `game-scope-completeness-audit`
+- `game-production-readiness-audit`, `game-architecture-maintainability-audit`
+- `game-live-risk-audit` when `project-state == shipped` or `project-state == live-risky`
+
+### Repair
+- `game-repair-roadmap`
+- `game-scope-guard`
+- `game-implementation-plan`
+- `game-production-code` when quality target >= polished-prototype
+- `game-playability-verifier`
+- `game-live-patch` when `project-state == shipped` or `project-state == live-risky`
+
+### Polish
 - `game-hud-feedback-polish`
 - `game-feedback-design`
 - `game-screenshot-critic`
@@ -79,19 +73,19 @@ Bias toward:
 - `game-audio-feedback-audit`
 - `game-feel-audit`
 
-## Operating principles
+### Trigger examples
+- Requests like `做一个 Douyin H5 Interactive 作品`, `抖音互动作品`, `抖音互动空间`, `抖音互动H5`, `竖屏 H5 互动页`, or `平台只接受 H5，要先定框架、文件结构和适配方式` should strongly bias toward `game-douyin-h5`.
+- If the same request also includes real-time browser gameplay, add `game-web-2d-specialist` after the platform shell and route are locked.
 
-- Do not jump straight into implementation before classifying the task.
-- Prefer specialized skills over ad hoc reasoning.
-- Keep the user aligned on quality target: `first-playable`, `polished-prototype`, `production-feature`, or `live-patch`.
+## Rules
+- Classify before implementation and prefer specialized skills over ad hoc reasoning.
+- Keep the quality target explicit: `first-playable`, `polished-prototype`, `production-feature`, or `live-patch`.
 - For live or risky projects, prefer audit-first and surgical changes.
-- For greenfield AI-native work, allow larger coherent changes when the user explicitly wants aggressive progress.
+- For browser games, lock spatial model, camera/view model, control grammar, obstacle grammar, and first-30-seconds promise before coding.
+- Prefer a builder + reviewer + verifier loop when the host supports subagents and the user wants maximum result quality; parallelize only across disjoint ownership zones.
+- Require fresh runtime verification before claiming a benchmark or showcase build is complete.
+- For cross-project reference or benchmarking, audit the reference project first, then apply the extracted patterns to the target via Repair or Build.
 
 ## Output expectation
 
-At the beginning of a task, briefly state:
-- which track you selected
-- current project state
-- which 2–5 Game Superpowers skills you are using next
-
-Then proceed with those specialized skills.
+At the start, state the selected track, current project state, output strategy, and the next 2-5 Game Superpowers skills.

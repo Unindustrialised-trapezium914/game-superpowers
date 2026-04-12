@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Establish the game-native architecture: managers, state flow, player control, camera, UI ownership, and other core systems needed for a maintainable build.
+Use when establishing core game runtime structure such as state flow, control, camera, and UI ownership.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Establish the game-native architecture: managers, state flow, player control, ca
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

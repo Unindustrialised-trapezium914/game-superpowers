@@ -11,7 +11,7 @@ Lead game-production workflow. Choose the right strategy for project state and q
 
 Follow the `using-game-superpowers` output strategy:
 - **inline** (default): keep all findings, plans, and decisions in conversation. Do not create `docs/` files.
-- **minimal**: write only `plan.md` and `quality-target.md` for cross-session continuity.
+- **minimal**: write only `docs/game-studio/plan.md` and `docs/game-studio/quality-target.md` for cross-session continuity.
 - **full**: create or update the relevant `docs/game-studio/` records for project state, concept, requirements, scope, build strategy, backend, UX, feedback, architecture, plan, quality, and release safety.
 
 ## Phase map

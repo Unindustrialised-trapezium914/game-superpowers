@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Summarize audit findings into a structured multi-dimensional scorecard for UI/UX, feedback, mechanics, scope completeness, maintainability, and live risk.
+  Use when converting game audit findings into a structured multi-axis scorecard.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:a06f749bc3d6a3500e82edcaf4912fd43afb57f944442de2283924a83f591d6f
+    hash: sha256:b32a44623970ddba34f464e70f5464f2130bc20bc17bae4d967fcde303b1dc73
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:18c0df552c1c2972833862287e2d0e24d00dc6c167e133119e2b2141a6b4dabf
+    hash: sha256:a4e8e52fbed4b18a582de34edd79bbdc29d14eb592408069cf15c4fd602905ce
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:621feeba353b7299aa908852a66b4d5b7bee19d20b0212cc6a446932f48ea748
+    hash: sha256:69a9206b2fa98ae205f78b7a3ea8dddc6470d2829018a52723cc4815ae0d30df
     note: Referenced support file: tests/smoke.md

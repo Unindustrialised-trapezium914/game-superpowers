@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit architecture, state management, boundaries, coupling, and maintainability risks that will make future AI or human iteration harder.
+Use when auditing structure, boundaries, coupling, or state-management risks in an existing game project.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit architecture, state management, boundaries, coupling, and maintainability 
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

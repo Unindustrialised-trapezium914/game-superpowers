@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Apply concrete browser 3D implementation guidance after backend selection. Use this when the project is web-first and the chosen route is browser 3D or hybrid 3D plus UI.
+Use when implementing browser-first 3D game work after the route and backend are already chosen.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Apply concrete browser 3D implementation guidance after backend selection. Use t
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

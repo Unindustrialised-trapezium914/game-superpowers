@@ -15,7 +15,8 @@ Collection entrypoint. Classify the request, then route explicitly.
 
 Project state:
 - `greenfield`
-- `existing-prelaunch`
+- `prelaunch`
+- `shipped`
 - `live-risky`
 
 ## Output strategy
@@ -54,7 +55,7 @@ Add the matching audit skills:
 - `game-feedback-audit`, `game-audio-feedback-audit`, `game-feel-audit`
 - `game-mechanics-systems-audit`, `game-scope-completeness-audit`
 - `game-production-readiness-audit`, `game-architecture-maintainability-audit`
-- `game-live-risk-audit` when `project-state == live-risky`
+- `game-live-risk-audit` when `project-state == shipped` or `project-state == live-risky`
 
 ### Repair
 - `game-repair-roadmap`
@@ -62,7 +63,7 @@ Add the matching audit skills:
 - `game-implementation-plan`
 - `game-production-code` when quality target >= polished-prototype
 - `game-playability-verifier`
-- `game-live-patch` when project-state == live-risky
+- `game-live-patch` when `project-state == shipped` or `project-state == live-risky`
 
 ### Polish
 - `game-hud-feedback-polish`

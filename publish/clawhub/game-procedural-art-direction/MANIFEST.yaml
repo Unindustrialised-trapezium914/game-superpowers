@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Define and implement procedural art direction for the current build target. Use when visual identity, shader recipes, SVG systems, particles, or UI recipes are part of the requested value, not just optional polish.
+  Use when procedural visual identity, shaders, particles, SVG systems, or UI recipes are part of the game deliverable.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:0412f672411876da32f5578cd69e566ca9a1591d58a8973486a91580bd88daa4
+    hash: sha256:d906b49f7967937b778e5468dbc99d1d3cf35abc1439f943243a09440d3f5d9c
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:c38ba6d5c9dc8f97f47d34edb007ddf65e77496374806c4420c4044d14f1e71b
+    hash: sha256:4a8726990ba951c1d3a33de2ab568dd6c9ebbbc3b11bcb35bfebbf21a1a76bf2
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -55,5 +55,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:56000fdc77d9b8a0b65bb77f5703450c0bc79140794c5682fe3554b1a67170f9
+    hash: sha256:02da61e1d3979b90e0d016c3e0b4b1e202a8c9de5ade16feb772ef929a7be2dd
     note: Referenced support file: tests/smoke.md

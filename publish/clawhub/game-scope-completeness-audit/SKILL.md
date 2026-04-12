@@ -1,12 +1,6 @@
 ---
 name: game-scope-completeness-audit
-description: Audit whether the project matches its intended scope and quality target, and identify fake-complete vs actually-complete features.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing whether delivered features actually match the promised scope and quality target."
 ---
 
 # Game Scope Completeness Audit
@@ -14,11 +8,11 @@ metadata:
 ## Goal
 Audit what the project is supposed to be, what it currently is, and where scope or completeness assumptions are misleading.
 
-## Deliverables
-Update:
-- `docs/game-studio/audit/audit-summary.md`
-- `docs/game-studio/audit/scorecard.json`
-- `docs/game-studio/audit/repair-roadmap.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present findings in conversation.
+- **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`, `docs/game-studio/audit/repair-roadmap.md`.
 
 Use:
 - `./shared/checklists/scope-completeness-audit-checklist.md`

@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit interaction feedback quality: input acknowledgment, hit/collect/reward/failure signaling, danger telegraphing, and state-transition clarity.
+Use when auditing responsiveness, rewards, failures, danger telegraphing, or state-transition feedback in a game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit interaction feedback quality: input acknowledgment, hit/collect/reward/fai
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

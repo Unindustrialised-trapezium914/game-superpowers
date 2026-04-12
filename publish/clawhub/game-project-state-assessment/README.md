@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use before major game work begins. Inspect the repo and request to classify the project as greenfield, prelaunch iteration, shipped product, or live-risky work. This determines whether aggressive AI-native development is appropriate.
+Use before major game work to classify the repo as greenfield, prelaunch, shipped, or live-risky.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Use before major game work begins. Inspect the repo and request to classify the 
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

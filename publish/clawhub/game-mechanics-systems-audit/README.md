@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit core verbs, loop integrity, system coherence, progression links, and whether implemented features actually form a playable game.
+Use when auditing core verbs, loop integrity, progression, or whether implemented systems form a playable game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit core verbs, loop integrity, system coherence, progression links, and wheth
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

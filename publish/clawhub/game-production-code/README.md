@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Apply production-grade code expectations to game work. Use when the build should be maintainable, understandable, and safe enough to extend, not merely hacked together for a one-off demo.
+Use when game implementation quality must be maintainable, understandable, and safe to extend.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Apply production-grade code expectations to game work. Use when the build should
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

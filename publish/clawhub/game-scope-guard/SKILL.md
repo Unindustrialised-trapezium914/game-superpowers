@@ -1,12 +1,6 @@
 ---
 name: game-scope-guard
-description: Protect the project from runaway complexity without destroying the user’s real goal. Scope differently depending on whether the project is greenfield, refactor-friendly, or live-risky.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when a game project is expanding too broadly and needs scope protection without losing the core goal."
 ---
 
 # Game Scope Guard
@@ -34,8 +28,11 @@ Do **not** equate “scope control” with “remove everything interesting.”
 - essential fail/retry and onboarding clarity
 - architecture cleanup that is necessary to make the requested change stable
 
-## Deliverable
-When you cut or defer scope, record the rationale in `docs/game-studio/plan.md` or `docs/game-studio/build-strategy.md`.
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): state scope decisions and rationale in conversation.
+- **minimal** or **full**: record the rationale in `docs/game-studio/plan.md` or `docs/game-studio/build-strategy.md`.
 
 
 ## Pair with

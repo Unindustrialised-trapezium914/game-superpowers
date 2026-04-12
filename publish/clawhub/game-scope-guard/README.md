@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Protect the project from runaway complexity without destroying the user’s real goal. Scope differently depending on whether the project is greenfield, refactor-friendly, or live-risky.
+Use when a game project is expanding too broadly and needs scope protection without losing the core goal.
 
 ## Recommended usage
 
@@ -15,6 +15,7 @@ Protect the project from runaway complexity without destroying the user’s real
 ## Companion skills
 
 - `game-scope-profile`
+- `using-game-superpowers`
 
 ## Source of truth
 

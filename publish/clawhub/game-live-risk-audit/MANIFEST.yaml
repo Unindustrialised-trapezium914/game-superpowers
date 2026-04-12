@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit risk in shipped or high-risk projects: rollback danger, compatibility hazards, state corruption, operational blast radius, and should-not-touch areas.
+  Use when auditing rollback, compatibility, corruption, or operational risks in a shipped or live-risky game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:de03ab290280c65950c4438422a18a4d1e06322228f2ceb73294f9440e7bb72f
+    hash: sha256:f80e592c9712e9f287b8897d2b2caa4838f86d88c3241fafb84121ccb9291f64
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:1bfe91fee13d300b81ec27f72d10d6be560b88b6ef9307d31654c3f28b19706d
+    hash: sha256:8672d110ffc71b22c6a12c366e275f72989e203e561b14b5ad1d133918633487
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:fd2e04b83922e760ea3654ea6695351e2dbfe5512285e112266a5b6e32b5844a
+    hash: sha256:d6ac44b0a31306af7293a43b9e162fbb06f16672b628d9baf040d7eb47019c53
     note: Referenced support file: tests/smoke.md

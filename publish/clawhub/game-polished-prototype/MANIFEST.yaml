@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use when the target is stronger than a minimal first playable. Build a coherent, good-looking, feature-complete prototype that can be demoed or evaluated seriously.
+  Use when the target is a coherent, demo-ready prototype rather than a minimal first playable.
 compatibility:
   designed_for:
     surfaces:
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:a84712e5f37445e28eba814742a3b9205bc5a53f4c7fbc6ddb9ddce791e7cdc3
+    hash: sha256:797bafcb60abab96458cc34e74ef25a47033d83b7faef7b1ec71d625a8e96a4a
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:08539ed20326eb4caa3af6b83d74ee3f407ad1b62a336971fde08595bc46382a
+    hash: sha256:7c56a1afa3274f07e9c3f9c670b8914d25c21ca3f1ac6a4da953822d04ad6bf6
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference

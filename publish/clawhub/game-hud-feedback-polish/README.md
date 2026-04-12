@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Improve UI clarity, micro-feedback, pacing, feel, and critical affordances so the result feels intentional rather than dead or placeholder-level.
+Use when polishing HUD clarity, affordances, pacing, or micro-feedback in a working game.
 
 ## Recommended usage
 

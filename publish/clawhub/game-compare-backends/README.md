@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Run a narrow compare between two or three backend profiles when architecture uncertainty is real. Use carefully, because it usually costs more tokens and time.
+Use when backend uncertainty remains and only a narrow two- or three-option compare is needed.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Run a narrow compare between two or three backend profiles when architecture unc
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

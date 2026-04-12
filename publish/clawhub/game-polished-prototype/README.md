@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use when the target is stronger than a minimal first playable. Build a coherent, good-looking, feature-complete prototype that can be demoed or evaluated seriously.
+Use when the target is a coherent, demo-ready prototype rather than a minimal first playable.
 
 ## Recommended usage
 

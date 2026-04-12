@@ -1,9 +1,9 @@
 bundle: game-backend-selector
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Choose or compare backend profiles based on required capabilities, project state, and quality target. Stay stack-neutral at the top level while still giving sharp recommendations and tradeoffs.
+  Use when choosing a backend profile for a game based on capabilities, project state, and quality target.
 compatibility:
   designed_for:
     surfaces:
@@ -32,21 +32,22 @@ compatibility:
 dependencies:
   - game-web-2d-specialist
   - game-web-3d-specialist
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:08aa94e996f17e3e988bbc874236c90a4c5017cc29a238fcd4d76cca6dc45046
+    hash: sha256:b5b21fdf0d93a2cbdcf7c651d53c202cfb4c541164f80202f95172b34fae3be0
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:40da23135635fd8275c8e95c6643898dbe91a655758a6b5511e70b8e5f687090
+    hash: sha256:dec88567e2d7fa515fa1c983c2f7ff514c4d2644267403beb9f88ac60d4b23de
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:d3919ba281e90253000245e07f0a614738b3f9b96dbb2de16eb3da2104cac218
+    hash: sha256:1fec8371963ba5acf0b9a82d4d6fbc33fc772799468e43b52397b9e3d944968c
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -61,5 +62,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:60b4bf6f6048ad160ac0a5e075d1935f1b5574e93554afaa09e2cd2edb01ef60
+    hash: sha256:70a71f5065ebd979d8a5dde7f768600457069b236b5b5565c9f77d205a35d1b5
     note: Referenced support file: tests/smoke.md

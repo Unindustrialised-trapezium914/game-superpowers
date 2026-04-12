@@ -1,12 +1,6 @@
 ---
 name: game-first-playable
-description: Use only when the chosen quality target is intentionally first-playable or spike-quality. This skill focuses on the thinnest credible vertical slice, not on feature-complete prototype quality.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; verifier skills also benefit from shell/build access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when the chosen quality target is intentionally first-playable or spike-quality."
 ---
 
 # Game First Playable
@@ -22,14 +16,11 @@ Convert the user's idea into:
 4. a working vertical slice,
 5. a verification report.
 
-## Required outputs
-Create and maintain these files in the project:
-- `docs/game-studio/spec.md`
-- `docs/game-studio/backend-decision.md`
-- `docs/game-studio/ux-flow.md`
-- `docs/game-studio/architecture.md`
-- `docs/game-studio/plan.md`
-- `docs/game-studio/quality-report.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present findings in conversation.
+- **minimal** or **full**: write to `docs/game-studio/spec.md`, `docs/game-studio/backend-decision.md`, `docs/game-studio/ux-flow.md`, `docs/game-studio/architecture.md`, `docs/game-studio/plan.md`, `docs/game-studio/quality-report.md`.
 
 Use the shared template at `./shared/templates/first-playable-spec.md`.
 

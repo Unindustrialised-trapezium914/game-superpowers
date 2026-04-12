@@ -1,9 +1,9 @@
 bundle: game-project-audit
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Top-level audit skill for existing game projects. Use it to run a read-first, multi-dimensional audit covering UI/UX, feedback, mechanics, completeness, maintainability, and live risk before any repair work.
+  Use when running a top-level audit of an existing game project before repair or major changes.
 compatibility:
   designed_for:
     surfaces:
@@ -43,21 +43,22 @@ dependencies:
   - game-repair-roadmap
   - game-scope-completeness-audit
   - game-ux-flow-audit
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:86934d396d492138c90c9d014ff42873a0d5ea069aeb3b62205df70c6ce14983
+    hash: sha256:47b8ac81c50851b02991618f22d5b2ad086e0cc88be952d5c56ce3b1990b5620
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:16c542f37e7fbd54d7108336b47aca792cc5bb90d3852df3b9f66b945d6051c3
+    hash: sha256:85940f232674ed47323f2b7709c31069b40da65de069c69c83eda636f75eb34f
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:5c24e8bc3cdc9bd9f78024ae7b7e9ecc21b161593ee0e1f2d7c94f5340356ea4
+    hash: sha256:0a87fef861da7aefe72f31d795fba322d0e02cb0461e8a815f2309f8a06d8f65
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -112,5 +113,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:0627dedd8db8eebf630003be853b69997bb4016447f6be89a1b8fe188255fc85
+    hash: sha256:d754d33ba061171d2859225e309ae729dddbcd0dc9fdb79a07ca7e3b6f3e0202
     note: Referenced support file: tests/smoke.md

@@ -1,12 +1,6 @@
 ---
 name: game-hud-readability-audit
-description: Audit HUD information hierarchy, readability, layout pressure, control discoverability, and mobile thumb-zone issues in an existing project.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when auditing HUD hierarchy, readability, controls discoverability, or mobile thumb-zone pressure."
 ---
 
 # Game HUD Readability Audit
@@ -14,11 +8,11 @@ metadata:
 ## Goal
 Audit the heads-up display and overlay layer for readability, hierarchy, and actionable clarity.
 
-## Deliverables
-Update:
-- `docs/game-studio/audit/ux-findings.md`
-- `docs/game-studio/audit/audit-summary.md`
-- `docs/game-studio/audit/scorecard.json`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present findings in conversation.
+- **minimal** or **full**: write to `docs/game-studio/audit/ux-findings.md`, `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`.
 
 Use:
 - `./shared/checklists/hud-readability-audit-checklist.md`

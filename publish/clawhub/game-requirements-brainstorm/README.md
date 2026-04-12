@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use when the request is vague, contradictory, or too under-specified to build a strong game result. Turn the request into a concise production-ready requirement brief without getting stuck in endless ideation.
+Use when a game request is vague, contradictory, or under-specified and needs a production-ready brief.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Use when the request is vague, contradictory, or too under-specified to build a 
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

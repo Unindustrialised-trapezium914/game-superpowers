@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Decide the AI-native development mode, quality target, task granularity, and refactor policy based on project state and user intent. This skill prevents both over-cautious iteration and reckless live-product rewrites.
+  Use when deciding development mode, quality target, task granularity, or refactor policy for game work.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:f95b39294989e37012b2394c9af120878885443740c9671f901eecafab6a19fa
+    hash: sha256:586199a5faa29b642343f37f8915c5bd0bfac326fd46671b84fb072ff7a3efa6
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:78bafefe481db3fef194e6f28b9dd7e22f36c497e63ecb88a3aa9b38bbd769d5
+    hash: sha256:5ca721c91364fb76d8d9a4075a3c01e6594e184fa02e25c6bcc1a949f8ad1e39
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,7 +65,7 @@ files:
   - path: shared/templates/build-strategy.md
     role: reference
     version: 1
-    hash: sha256:41497bc63c747e7a07e14f95f6de4df3bf3ec7bbefc9d3dcab8c6967cd3f3094
+    hash: sha256:cc1798e7f2ba65adf1f38cf0959758bb7f29bae6aa7a19c6fe3b5e2c00862690
     note: Referenced support file: shared/templates/build-strategy.md
   - path: shared/templates/quality-target.md
     role: reference
@@ -75,5 +75,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:de69e6a62ad775a10d8be9a1db70880b06dbcb8fec70930189ec0267b29ebe1f
+    hash: sha256:aef923e75508bd18c5eb2d10cd732f9fd6204633594145d06fb221518b771584
     note: Referenced support file: tests/smoke.md

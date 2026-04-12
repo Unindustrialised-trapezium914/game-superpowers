@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use only when the chosen quality target is intentionally first-playable or spike-quality. This skill focuses on the thinnest credible vertical slice, not on feature-complete prototype quality.
+  Use when the chosen quality target is intentionally first-playable or spike-quality.
 compatibility:
   designed_for:
     surfaces:
@@ -37,6 +37,7 @@ dependencies:
   - game-scope-guard
   - game-screenshot-critic
   - game-ux-flow-designer
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -46,12 +47,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:1948fcc590f45f3ddaa9a79b395b82cac9fdd93cc3c3e41afc06f050dc0d2cee
+    hash: sha256:5acad31e007795d84c52b7c23ece3d07cb8b04bf6e4a1295d4eb661db80f18ff
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:76aaa4394da58e767b3b086f7ac8ae7c8b09159693863a819bf84f17f6af123d
+    hash: sha256:f64c6b1ca8f51c6f4e1aed65c8df7a0af8edcfd8c8898afc715555a2bc1543a3
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -66,5 +67,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:8d071e14aeb62c4bda132da9669cf2329c93dcf707eaee1cc51cc6f12b1901d7
+    hash: sha256:24c3b0ca4d11f7d0ba57e5f43737b392f373128021f25d04aa4427351e5a8c92
     note: Referenced support file: tests/smoke.md

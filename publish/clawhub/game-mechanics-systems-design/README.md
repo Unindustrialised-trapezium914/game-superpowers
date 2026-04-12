@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Translate the concept, UX flow, and quality target into game-native systems such as core loop, state model, progression, encounter logic, save boundaries, and sound ownership. Use when the build needs more than a vague architecture sketch.
+Use when translating a locked concept into concrete game systems, progression, state, and encounter rules.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Translate the concept, UX flow, and quality target into game-native systems such
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

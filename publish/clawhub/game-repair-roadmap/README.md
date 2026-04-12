@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Convert audit findings into a prioritized repair roadmap with quick wins, high-impact fixes, risky items, and explicit do-not-touch zones.
+Use when turning game audit findings or known issues into a prioritized repair plan.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Convert audit findings into a prioritized repair roadmap with quick wins, high-i
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

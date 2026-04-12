@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Design the interaction and interface flow before or alongside implementation. Focus on the first minutes, clarity, menus, onboarding, and feedback so the game feels understandable and intentional.
+Use when designing onboarding, menus, CTA hierarchy, and first-minute interaction flow for a game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Design the interaction and interface flow before or alongside implementation. Fo
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

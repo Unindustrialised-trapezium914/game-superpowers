@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Establish the game-native architecture: managers, state flow, player control, camera, UI ownership, and other core systems needed for a maintainable build.
+  Use when establishing core game runtime structure such as state flow, control, camera, and UI ownership.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:21676cc41f8ba910cdbdf7f0b134e14ba9df82e2eae90ee5465f75d9ceecbe53
+    hash: sha256:a50de88757b3194c268993ac76cebfeb0e0cb5d968e8c447ad2c31b32c936dd9
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:80fd574c30c9efa6a85fa359490d76034e8c44891f8c5b970207e63e2d69aa32
+    hash: sha256:11e8d5b76a1937edecbde302d1f1367668189de0cf391c16c7fd6cdd67987afa
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -55,5 +55,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:56237af4ab212468527f36e9bb857ae1ac7d41acbf29abb0a74a4596d27a5fb7
+    hash: sha256:83704a628b4088fa3548f768e182f4b5d520a13a3f8f2436d06e442772ee2029
     note: Referenced support file: tests/smoke.md

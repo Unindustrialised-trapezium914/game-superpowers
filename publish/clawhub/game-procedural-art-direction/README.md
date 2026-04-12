@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Define and implement procedural art direction for the current build target. Use when visual identity, shader recipes, SVG systems, particles, or UI recipes are part of the requested value, not just optional polish.
+Use when procedural visual identity, shaders, particles, SVG systems, or UI recipes are part of the game deliverable.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Define and implement procedural art direction for the current build target. Use 
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

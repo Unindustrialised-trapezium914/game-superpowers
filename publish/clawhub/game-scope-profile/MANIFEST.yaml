@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Set the game scope tier, completeness bar, and allowed refactor range so the agent neither underbuilds nor gets lost in endless overbuilding.
+  Use when setting scope tier, completeness bar, and allowed refactor range for a game build.
 compatibility:
   designed_for:
     surfaces:
@@ -31,6 +31,7 @@ compatibility:
   frontmatter_mode: metadata
 dependencies:
   - game-scope-guard
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +41,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:7647bde6a4c7ff7e396e638ced570683fd9c40a132b3823ff43b6339587b0474
+    hash: sha256:2da8fe93edc7e9b46edffc0265f3199839eed05f97d8ca62307be495263bfa53
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:d295bc57dc4be5e4b980878c128e9d781856c51989a2719d626501475799470c
+    hash: sha256:bfca72e419939965a7d92ac5efb4804745d037c8bd9fa121f69f6e91c1eb4685
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +66,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:722c82587458f480f0700ee5089260de4571fa93a6888bd6fd1b31e107af1ef0
+    hash: sha256:faebc6eff7345bbc7f61123c155321ce7f6b4267cd52f8e06f8df23f2f16487c
     note: Referenced support file: tests/smoke.md

@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
+  Use when turning an approved game brief into verifiable implementation tasks matched to the chosen build mode.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:40e5251721e731067bd43924bd261aa70fc7ca60619720e8bdf277e0c050135d
+    hash: sha256:ba53209114a2e12c66db6cddec92ba0e568401bc9ef31bd881c53a95b01e6c17
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:f5cc912987f764cf70073a2740409132a985c22cc13b51724dd7c127095f99ca
+    hash: sha256:d3b04ff659ee96686611dd999a508c607d5438ee4aa25e5315ab23c271cc57d7
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -55,10 +55,10 @@ files:
   - path: shared/templates/task-plan.md
     role: reference
     version: 1
-    hash: sha256:7e4aefbaaa15795340dfb6082d251dd8640aaa180b603e5eeb74909797ce3daf
+    hash: sha256:fd672bee094c458bf1ce7d56d426d7ce96235cb08a22a5de4a3980bfd889ed60
     note: Referenced support file: shared/templates/task-plan.md
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:b4b6ee866627f97aebea108e08ed179cb583a4d560baa06636c76c73575048d4
+    hash: sha256:ab3603f173f952508bd3c54f1eb68cd1335d038badb6e6e079076b62c1705dbb
     note: Referenced support file: tests/smoke.md

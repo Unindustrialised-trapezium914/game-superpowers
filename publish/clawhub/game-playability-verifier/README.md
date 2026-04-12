@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Verify the build against the chosen quality target. Check bootability, interaction, UX, requested feature completeness, and regressions before success is claimed.
+Use when verifying a game build against its quality target before claiming it is complete.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Verify the build against the chosen quality target. Check bootability, interacti
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

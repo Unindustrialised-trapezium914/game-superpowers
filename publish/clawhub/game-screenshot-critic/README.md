@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Critique screenshots or visual evidence for readability, hierarchy, visual direction, and target-quality fit. Use after builds, playtests, or visual iterations.
+Use when critiquing screenshots or visual captures for readability, hierarchy, and target-quality fit.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Critique screenshots or visual evidence for readability, hierarchy, visual direc
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

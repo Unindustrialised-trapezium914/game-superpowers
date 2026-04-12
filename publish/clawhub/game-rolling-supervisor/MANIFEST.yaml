@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Enable a guarded external rolling build/verify/repair loop for high-autonomy game development. Use when the task is too large for one clean session and broad changes are allowed.
+  Use when game work is too large for one session and needs a guarded external build/verify/repair loop.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:e0b5f3f6596ee20e68c1c1c1e12337d0a3ed02f07375f2d33c0b90ec833b2799
+    hash: sha256:9cb4fefad953d96da4961f2b27b3278bec9bef752d3d03c6b439b4d7ef2bc9e8
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:85530bce6cb525cf7676f246bb56341fc9065fac30b4619d72939dd825cc49d4
+    hash: sha256:44410250baf0ef0f8d91a6590009201d0093ad8ff52574554cf8385dc2f68eba
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -75,5 +75,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:0e0e748504dbbb62c7fa5b64a12664bb561e7e2baee1a436aa5daa52d1c82abd
+    hash: sha256:de8edbd1128f30f8b49ccd23e07a279b01d33ab0c830cd96293696b46fb22e22
     note: Referenced support file: tests/smoke.md

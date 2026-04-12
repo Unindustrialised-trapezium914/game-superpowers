@@ -1,12 +1,6 @@
 ---
 name: game-scope-profile
-description: Set the game scope tier, completeness bar, and allowed refactor range so the agent neither underbuilds nor gets lost in endless overbuilding.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when setting scope tier, completeness bar, and allowed refactor range for a game build."
 ---
 
 # Game Scope Profile
@@ -14,8 +8,11 @@ metadata:
 ## Goal
 Translate project state and quality target into a concrete scope tier.
 
-## Deliverables
-- `docs/game-studio/scope-profile.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present scope profile in conversation.
+- **minimal** or **full**: write `docs/game-studio/scope-profile.md`.
 
 Use:
 - `./shared/templates/scope-profile.md`

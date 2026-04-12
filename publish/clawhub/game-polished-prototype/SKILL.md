@@ -1,12 +1,6 @@
 ---
 name: game-polished-prototype
-description: Use when the target is stronger than a minimal first playable. Build a coherent, good-looking, feature-complete prototype that can be demoed or evaluated seriously.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access helps verification.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when the target is a coherent, demo-ready prototype rather than a minimal first playable."
 ---
 
 # Game Polished Prototype

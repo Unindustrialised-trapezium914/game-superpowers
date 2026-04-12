@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use only when the chosen quality target is intentionally first-playable or spike-quality. This skill focuses on the thinnest credible vertical slice, not on feature-complete prototype quality.
+Use when the chosen quality target is intentionally first-playable or spike-quality.
 
 ## Recommended usage
 
@@ -21,6 +21,7 @@ Use only when the chosen quality target is intentionally first-playable or spike
 - `game-scope-guard`
 - `game-screenshot-critic`
 - `game-ux-flow-designer`
+- `using-game-superpowers`
 
 ## Source of truth
 

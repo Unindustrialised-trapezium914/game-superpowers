@@ -1,9 +1,9 @@
 bundle: game-feedback-design
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Design the game’s feedback grammar across visuals, audio, motion, danger signaling, reward signaling, and UI acknowledgment so the result feels alive rather than placeholder-level.
+  Use when designing a game's visual, motion, audio, or UI feedback grammar.
 compatibility:
   designed_for:
     surfaces:
@@ -30,22 +30,22 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:642edb99b0045771324c434b174886f0c99b5aec2d09ef9d4857d7a3b9cd4fc8
+    hash: sha256:d2766ac01e85367606730aba7135a8a0caaa3abef8bea67981dcb58942f52f38
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:2485ab7f7bdc24d187da12141dc4dc28ce851942848ea458d3df66629ded2908
+    hash: sha256:f266bfa2fd860d67aeef9446458a10b6e7c74e7a2783ce48cd6755ede7a9c1e3
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:339ce7ffdde61ba9623ce4b6e32d53405ac9df219799b3a1a11573a5264f0570
+    hash: sha256:e42ef1a138f6e49661975f8acb4ab78d7b64953469dc425d157383de3286b671
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -75,5 +75,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:3303e862461cfee1c1e0b6a15c114357782c390f98cad0d8ae43dc6ff1a70411
+    hash: sha256:0be7b605f7a7cfe34032c673734bade6580e670fa891c767ddc2d5b970977d3a
     note: Referenced support file: tests/smoke.md

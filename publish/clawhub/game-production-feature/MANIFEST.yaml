@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use when the requested outcome should land as a maintainable product-grade feature rather than a prototype. This skill protects completeness, integration quality, and verification discipline.
+  Use when a requested game feature should land as a maintainable product-grade feature, not a prototype slice.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:9829af802cee259af37f395e87dbfe8748d8287d33f077fcd66c41a6fe0909e0
+    hash: sha256:5205492b57570cdc95f359f87f653a43befcce2fb504a89a47baa4b927a9484e
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:d2752e431c794508e1a85665bdf09c9460d72a0c0f2a1d118f8d377465dbdb49
+    hash: sha256:b083ad152da8816d7eb089e079fb59aac10b6de11d9b15b9c41494cd29e9ea51
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:65f16338875d01b09a42d5bb6d30f62689a87dc58bd256b93c37600621974cf3
+    hash: sha256:890359f672d75cd438af9e4f15fd6cc4ce81fc60d466443ce7cdff74800e1021
     note: Referenced support file: tests/smoke.md

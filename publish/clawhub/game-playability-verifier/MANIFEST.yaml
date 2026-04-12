@@ -1,9 +1,9 @@
 bundle: game-playability-verifier
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Verify the build against the chosen quality target. Check bootability, interaction, UX, requested feature completeness, and regressions before success is claimed.
+  Use when verifying a game build against its quality target before claiming it is complete.
 compatibility:
   designed_for:
     surfaces:
@@ -30,22 +30,22 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:71e790ea9db019dfd7092b0a9d1c89379d5515ea5f2ffc905b0d20b5f37ee980
+    hash: sha256:967234045baf963d8d9d451c1d3357ceda0b66d896d6987a6bc5f7cedd4ceab9
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:82eac65ecf0e3e3c831af9f2833114d7c3d0e7d0958a5071e1e023a0e258c388
+    hash: sha256:1e0f4c9f94533cd01072237864ff7b5f9e6784c56760ab5aa08b907f6cc857d8
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:ef32d964c547293d7db57d91fc6dc8682a4a132ac2d32f5bd40b7af47882542a
+    hash: sha256:0951247dcc67be3802a40f27492ac2ca049107826ca146b4db06534b6c7aa7dd
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -90,5 +90,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:b221253eeeb09b687018e09bc9b6827b263218e66c02eb130c1369af7b8d0b32
+    hash: sha256:60b6cc25c0e0493fb0c6ab2956a2812984fe56699f5654cda85df5c6e5e185b8
     note: Referenced support file: tests/smoke.md

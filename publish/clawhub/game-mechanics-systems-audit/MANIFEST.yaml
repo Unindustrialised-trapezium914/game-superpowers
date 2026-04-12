@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit core verbs, loop integrity, system coherence, progression links, and whether implemented features actually form a playable game.
+  Use when auditing core verbs, loop integrity, progression, or whether implemented systems form a playable game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:33ee6615be1dba160cd8679d9bc0b4f1aa71174ea901128f83ece9eb6c657cf6
+    hash: sha256:85027cd55d90259965880a7db4f90a4564c74b875b23361b46710af86dac43a9
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:0422283af33817057d20476affe7bcc285586223f5fe21132d7e485efba438e3
+    hash: sha256:011fc41367e1e1933eaf8e1e4db3509f71713633c8fe72080a92b95a1984a15b
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:df758de85d96283707367a93014a2b6982275c9c3507c574e14f17b9d6a89cea
+    hash: sha256:16bb2f99ad5b7482ec0d8467417342541c6abd6975e14aae64076c71cf17e3b8
     note: Referenced support file: tests/smoke.md

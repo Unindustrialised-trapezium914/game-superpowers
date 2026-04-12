@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit whether the project meets production-grade expectations for structure, maintainability, standards, and safe continued iteration.
+Use when auditing whether a game project meets production-grade standards for release or continued iteration.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit whether the project meets production-grade expectations for structure, mai
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

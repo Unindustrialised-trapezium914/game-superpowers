@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit the project's audio layer as UX feedback: UI sounds, success/failure signals, danger cues, layering, and semantic sound priorities.
+Use when auditing UI sounds, reward/failure cues, danger cues, or audio feedback layering in a game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit the project's audio layer as UX feedback: UI sounds, success/failure signa
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

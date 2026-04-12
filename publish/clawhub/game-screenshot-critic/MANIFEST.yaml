@@ -1,9 +1,9 @@
 bundle: game-screenshot-critic
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Critique screenshots or visual evidence for readability, hierarchy, visual direction, and target-quality fit. Use after builds, playtests, or visual iterations.
+  Use when critiquing screenshots or visual captures for readability, hierarchy, and target-quality fit.
 compatibility:
   designed_for:
     surfaces:
@@ -30,22 +30,22 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:e904520221a6f54667c83c0b9752602c4b46b7feb108f18f491d26e82456b919
+    hash: sha256:61e06bfdef66c13af7e9781bf5a23d60571d5516736b218117aafb6078ca3099
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:bf52dff4bf4435a4046363a0614dd91bff44eb44b4ed90fb24bc90430d716824
+    hash: sha256:ca8c426e00742388f97cf1942e00aa94a85e4d333ac03d3424d33ba1cab20f40
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:6c0d96ea64d7e1aeb045f1309d4700f21d48bd362e7fde4684f972924ba0a10e
+    hash: sha256:ec8eaa22fe821ee59779e9857c2e5c8f295ab1c2f5490abd647c353f6700d78c
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:07c6ffe383d227ab8c98f552306eb3f9cdb0a9cba015a4a82b6e31add984b813
+    hash: sha256:45860c12f5b36570a1d0de8c1bc413e36f6912c7047e0bb10ad83552e0b7d2cf
     note: Referenced support file: tests/smoke.md

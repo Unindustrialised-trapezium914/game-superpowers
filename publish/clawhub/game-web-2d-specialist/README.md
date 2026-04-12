@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Apply concrete browser 2D implementation guidance after backend selection. Use this when the project is web-first and the chosen route is 2D UI-first or 2D world-first.
+Use when implementing browser-first 2D game work after the route and backend are already chosen.
 
 ## Recommended usage
 
@@ -14,7 +14,8 @@ Apply concrete browser 2D implementation guidance after backend selection. Use t
 
 ## Companion skills
 
-- None
+- `game-douyin-h5`
+- `using-game-superpowers`
 
 ## Source of truth
 

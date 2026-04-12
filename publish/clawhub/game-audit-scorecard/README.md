@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Summarize audit findings into a structured multi-dimensional scorecard for UI/UX, feedback, mechanics, scope completeness, maintainability, and live risk.
+Use when converting game audit findings into a structured multi-axis scorecard.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Summarize audit findings into a structured multi-dimensional scorecard for UI/UX
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

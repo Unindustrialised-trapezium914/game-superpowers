@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use when the task is about building, auditing, or improving a game project with this Game Superpowers skill collection. Acts as the collection bootstrap skill: classify the request, choose the right specialized game skills, and coordinate them instead of trying to solve the entire task ad hoc.
+Use when a request needs routing across this Game Superpowers collection for build, audit, repair, or polish work.
 
 ## Recommended usage
 
@@ -17,27 +17,34 @@ Use when the task is about building, auditing, or improving a game project with 
 - `game-architecture-maintainability-audit`
 - `game-audio-feedback-audit`
 - `game-audit-scorecard`
+- `game-build-review`
 - `game-build-strategy`
 - `game-concept-brainstorm`
+- `game-douyin-h5`
 - `game-feedback-audit`
 - `game-feedback-design`
 - `game-feel-audit`
 - `game-hud-feedback-polish`
 - `game-hud-readability-audit`
+- `game-implementation-plan`
+- `game-live-patch`
 - `game-live-risk-audit`
 - `game-loop-bootstrap`
 - `game-mechanics-systems-audit`
 - `game-mechanics-systems-design`
 - `game-playability-verifier`
 - `game-polished-prototype`
+- `game-production-code`
 - `game-production-feature`
 - `game-production-readiness-audit`
 - `game-project-audit`
 - `game-project-state-assessment`
 - `game-repair-roadmap`
 - `game-scope-completeness-audit`
+- `game-scope-guard`
 - `game-scope-profile`
 - `game-screenshot-critic`
+- `game-subagent-build-loop`
 - `game-super-build`
 - `game-ux-flow-audit`
 - `game-ux-flow-designer`

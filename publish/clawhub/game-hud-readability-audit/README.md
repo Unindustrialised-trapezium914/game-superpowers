@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit HUD information hierarchy, readability, layout pressure, control discoverability, and mobile thumb-zone issues in an existing project.
+Use when auditing HUD hierarchy, readability, controls discoverability, or mobile thumb-zone pressure.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit HUD information hierarchy, readability, layout pressure, control discovera
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

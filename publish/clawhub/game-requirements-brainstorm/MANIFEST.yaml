@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use when the request is vague, contradictory, or too under-specified to build a strong game result. Turn the request into a concise production-ready requirement brief without getting stuck in endless ideation.
+  Use when a game request is vague, contradictory, or under-specified and needs a production-ready brief.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:9505110bd1bb979d6aa5e2fa0e1cc676e26331e82ba93432b03eda0b99349a3b
+    hash: sha256:ed18e6d3d7f8b286f77dbf8d1421772596b247427e6d60c29ca1ea49ac09b79f
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:ea64599cb777e19f4c27798e5cc8de7b5830752b17039447c7fbae8cf84b140e
+    hash: sha256:71a20b3c24eae252b3c71f4c4d7c6b845b03c06d432209d52b73b95ff1c52692
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -60,10 +60,10 @@ files:
   - path: shared/templates/requirements-brief.md
     role: reference
     version: 1
-    hash: sha256:b1fb840e9ff8d13bdc7d915f3a4a9982da86158b16dbcb5b7b96f24d2482e441
+    hash: sha256:4286ba85f62b70b8c5354d2eb3e83096c7b6454718212c141a5d28f57db79526
     note: Referenced support file: shared/templates/requirements-brief.md
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:2ed04c6f3897563d4549f7e6e8aaa338e047850592b864ed9916f66283ca7eb2
+    hash: sha256:3082f842609604de71c9bd139db965407675f4d9a8376e01b1296cbabd4e8259
     note: Referenced support file: tests/smoke.md

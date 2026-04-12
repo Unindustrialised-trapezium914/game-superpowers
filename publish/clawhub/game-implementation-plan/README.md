@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Turn the approved brief into a sequence of verifiable tasks that matches the selected development mode. This skill prevents both endless micro-edits and reckless unbounded rewrites.
+Use when turning an approved game brief into verifiable implementation tasks matched to the chosen build mode.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Turn the approved brief into a sequence of verifiable tasks that matches the sel
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

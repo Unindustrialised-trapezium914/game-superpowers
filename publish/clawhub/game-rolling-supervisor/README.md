@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Enable a guarded external rolling build/verify/repair loop for high-autonomy game development. Use when the task is too large for one clean session and broad changes are allowed.
+Use when game work is too large for one session and needs a guarded external build/verify/repair loop.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Enable a guarded external rolling build/verify/repair loop for high-autonomy gam
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

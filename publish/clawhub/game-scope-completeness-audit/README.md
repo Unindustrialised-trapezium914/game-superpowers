@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit whether the project matches its intended scope and quality target, and identify fake-complete vs actually-complete features.
+Use when auditing whether delivered features actually match the promised scope and quality target.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit whether the project matches its intended scope and quality target, and ide
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

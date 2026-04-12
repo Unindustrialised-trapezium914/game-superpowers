@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Translate the concept, UX flow, and quality target into game-native systems such as core loop, state model, progression, encounter logic, save boundaries, and sound ownership. Use when the build needs more than a vague architecture sketch.
+  Use when translating a locked concept into concrete game systems, progression, state, and encounter rules.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:14907d3b3b72c89c90e4baf1ed470557f7fcae017f58a7bba64a5561a932b37f
+    hash: sha256:aef9d1ee4a121412f65e8482c081d3af9cdb4576177b6861bfe889b87a21e169
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:37f3d97d182c325a9468f10af1d59283c20f29c6be8aa4c522f6b2027728c306
+    hash: sha256:cdcbbde2f26846a162dd70553b54588daeba44309e726fb2c8fdc2e85c0c0a69
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:917e70d8f42dcbf95993655b89ca4e386dc62895bced4b542e3ab5ef5efad836
+    hash: sha256:69d7f41ee16f6ec7bde7617bee8c0ab3fca6a210eb5b71250c1ec0a32348d866
     note: Referenced support file: tests/smoke.md

@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Design the game’s feedback grammar across visuals, audio, motion, danger signaling, reward signaling, and UI acknowledgment so the result feels alive rather than placeholder-level.
+Use when designing a game's visual, motion, audio, or UI feedback grammar.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Design the game’s feedback grammar across visuals, audio, motion, danger signa
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

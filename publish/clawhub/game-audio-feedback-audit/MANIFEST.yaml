@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit the project's audio layer as UX feedback: UI sounds, success/failure signals, danger cues, layering, and semantic sound priorities.
+  Use when auditing UI sounds, reward/failure cues, danger cues, or audio feedback layering in a game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:97e09929feec8f4ec95d01ca883451378fedfd41fa22d32ee7281b86ec6828b2
+    hash: sha256:2f466762774afa6ef6f45b33c5d59caedf4125f73b2a75b1bc8738c0178a89b1
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:25e222aadf306537ddd3ad6bd56fe977c750672b027e698d43a751f71ce0988f
+    hash: sha256:5ff78ee1f96e91a9ca7ca9eeb574959fe83b0dee5ee4dd23af89de5e211aabf8
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:73181b21e18f0ce53af8e06d7e391f64443e28d4b697566948931829bcfa9664
+    hash: sha256:2779c60e42b4923bebf8986ca91f7260d98f91706d85d5041baa5bf2b98d640d
     note: Referenced support file: tests/smoke.md

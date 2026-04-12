@@ -8,6 +8,11 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SKILLS = ROOT / 'skills'
+MIRRORS = {
+    '.agents/skills': ROOT / '.agents' / 'skills',
+    '.claude/skills': ROOT / '.claude' / 'skills',
+    'publish/clawhub': ROOT / 'publish' / 'clawhub',
+}
 NAME_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
 def split_frontmatter(text: str):
@@ -60,10 +65,12 @@ def extract_meta(data: dict):
 
 errors = []
 count = 0
+skill_names = set()
 for d in sorted(SKILLS.iterdir()):
     if not d.is_dir():
         continue
     count += 1
+    skill_names.add(d.name)
     p = d / 'SKILL.md'
     if not p.exists():
         errors.append(f'{d.name}: missing SKILL.md')
@@ -82,6 +89,17 @@ for d in sorted(SKILLS.iterdir()):
         errors.append(f'{d.name}: missing description')
     if not body.strip():
         errors.append(f'{d.name}: empty body')
+
+for label, root in MIRRORS.items():
+    if not root.exists():
+        continue
+    mirrored = {path.name for path in root.iterdir()}
+    missing = sorted(skill_names - mirrored)
+    extra = sorted(mirrored - skill_names)
+    for name in missing:
+        errors.append(f'{label}: missing {name}')
+    for name in extra:
+        errors.append(f'{label}: unexpected {name}')
 if errors:
     for e in errors:
         print('ERROR:', e)

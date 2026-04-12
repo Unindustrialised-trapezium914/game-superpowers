@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Audit game feel and responsiveness based on control paths, timing assumptions, animation hooks, camera reactions, and feedback cues.
+Use when auditing control feel, responsiveness, timing, camera reaction, or animation feedback in a game.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Audit game feel and responsiveness based on control paths, timing assumptions, a
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use when the repo is shipped or live-risky. This skill narrows changes, documents blast radius and rollback, and prioritizes safety over broad cleanup.
+Use when patching a shipped or live-risky game and changes must stay narrow and rollback-aware.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Use when the repo is shipped or live-risky. This skill narrows changes, document
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

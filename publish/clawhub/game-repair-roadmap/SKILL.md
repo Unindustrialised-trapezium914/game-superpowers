@@ -1,12 +1,6 @@
 ---
 name: game-repair-roadmap
-description: Convert audit findings into a prioritized repair roadmap with quick wins, high-impact fixes, risky items, and explicit do-not-touch zones.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when turning game audit findings or known issues into a prioritized repair plan."
 ---
 
 # Game Repair Roadmap
@@ -14,10 +8,11 @@ metadata:
 ## Goal
 Turn audit findings into an execution order that respects project state, risk, and quality target.
 
-## Deliverables
-Create or update:
-- `docs/game-studio/audit/repair-roadmap.md`
-- `docs/game-studio/audit/risk-register.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present the prioritized roadmap and risk items in conversation.
+- **minimal** or **full**: write `docs/game-studio/audit/repair-roadmap.md` and `docs/game-studio/audit/risk-register.md`.
 
 Use:
 - `./shared/templates/repair-roadmap.md`

@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Turn a vague game idea into a sharp fantasy, design pillars, player verbs, and acceptance bar before implementation begins. This is the proper “brainstorm” stage, not endless ideation.
+  Use when a game idea is still vague and needs pillars, verbs, and an acceptance bar before implementation.
 compatibility:
   designed_for:
     surfaces:
@@ -33,6 +33,7 @@ dependencies:
   - game-requirements-brainstorm
   - game-scope-profile
   - game-ux-flow-designer
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -42,12 +43,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:09555f4fcc817ca93452bc68ab117e2089ebacef79e5fb9b43b4918634c9361f
+    hash: sha256:ccbd29d187c9aa0c07891ef384bf381c2b51272e2c7fef77c5f043e7bc10121e
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:ce23d71a7454ab294abe0db29dbc7890935b9ed5e88995cd48655eebcff73d96
+    hash: sha256:0c027900abcfc19c3c15af580adcc0c38943383a28d8d8162ecdaaecffaa7dfa
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -57,10 +58,10 @@ files:
   - path: shared/templates/concept-brainstorm.md
     role: reference
     version: 1
-    hash: sha256:a35f0f510db75dc3264af30065182f37de6dffc5adb9292ecdafaa1706b4b8d2
+    hash: sha256:54dcb86623f60c36784b0dcceaced1e6d68b36bf92947663c4056cd4cf7c9ae9
     note: Referenced support file: shared/templates/concept-brainstorm.md
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:01cf5ae774efa32d985bacaa8fe92ce7f27e90dfe5faf73bb37aea1bf7c147cf
+    hash: sha256:2557995c2a62f66988f4125fb678587afbb87baee3b0c108b6fd9de698d22297
     note: Referenced support file: tests/smoke.md

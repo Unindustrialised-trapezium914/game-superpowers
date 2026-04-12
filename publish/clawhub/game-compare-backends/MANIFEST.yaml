@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Run a narrow compare between two or three backend profiles when architecture uncertainty is real. Use carefully, because it usually costs more tokens and time.
+  Use when backend uncertainty remains and only a narrow two- or three-option compare is needed.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:a01ab4187569d98b4b7c8d5f14faa9816243bdc8eb3c7c084a3b493244d42513
+    hash: sha256:2d9b14606aa22b665c256be6582ef86c2b59679bd4568d0a5a49cb8762f8787a
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:8d12468ba40da4bf3cc314b08f6c1f85ce4e028fc2e004848b65c384dcfa7df4
+    hash: sha256:6b848051a3f1519b5197afcfd6b139353cdfd80dc1cbdcb7795b3c03a2923a7c
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -55,5 +55,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:4121633c6fcd598b5090def3baf110c738925ec7b3dd908a55649d917db5816a
+    hash: sha256:2eda16ea35637384e8b201f8b6bd92c9cd4e0878e1576d508ca8b975180487a6
     note: Referenced support file: tests/smoke.md

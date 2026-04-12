@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit first-30-seconds flow, onboarding, fail/retry loops, navigation clarity, and player understanding in an existing game project.
+  Use when auditing first-minute onboarding, menus, fail/retry flow, or player comprehension in a game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:4ec98490e31964bbc547e7e98998eaa0d7197669cfe195f8ac2bb45daf5aca28
+    hash: sha256:ea42a2b53111c9d83099251eab66f05c53ec0c917ed9532a058939952f66e44f
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:00ed2bb6f5b17308ad9fb34cc45ace6f76fa60241fdcee297c5107321bde7c64
+    hash: sha256:3f39dd4202455a97723fa6a29bd946c726a0c67a5381c9fc4ba60e2c4227c312
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:d81b70b5ec48f5a0f0e78359d972af73f8fc0f5863fb47b124c9b29abe328deb
+    hash: sha256:50a4cf5636dc723a8d842e7b5d64b95a7c69e8182d8804f3cbea83c29a9f4f53
     note: Referenced support file: tests/smoke.md

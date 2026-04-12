@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Decide the AI-native development mode, quality target, task granularity, and refactor policy based on project state and user intent. This skill prevents both over-cautious iteration and reckless live-product rewrites.
+Use when deciding development mode, quality target, task granularity, or refactor policy for game work.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Decide the AI-native development mode, quality target, task granularity, and ref
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

@@ -1,12 +1,6 @@
 ---
 name: game-production-readiness-audit
-description: Audit whether the project meets production-grade expectations for structure, maintainability, standards, and safe continued iteration.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing whether a game project meets production-grade standards for release or continued iteration."
 ---
 
 # Game Production Readiness Audit
@@ -14,11 +8,11 @@ metadata:
 ## Goal
 Audit whether the codebase is ready for sustained development rather than only demo survival.
 
-## Deliverables
-Update:
-- `docs/game-studio/audit/audit-summary.md`
-- `docs/game-studio/audit/scorecard.json`
-- `docs/game-studio/audit/repair-roadmap.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present findings in conversation.
+- **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`, `docs/game-studio/audit/repair-roadmap.md`.
 
 Use:
 - `./shared/checklists/production-readiness-audit-checklist.md`

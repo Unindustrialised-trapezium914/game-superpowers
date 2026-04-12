@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Use when the task is about building, auditing, or improving a game project with this Game Superpowers skill collection. Acts as the collection bootstrap skill: classify the request, choose the right specialized game skills, and coordinate them instead of trying to solve the entire task ad hoc.
+  Use when a request needs routing across this Game Superpowers collection for build, audit, repair, or polish work.
 compatibility:
   designed_for:
     surfaces:
@@ -33,27 +33,34 @@ dependencies:
   - game-architecture-maintainability-audit
   - game-audio-feedback-audit
   - game-audit-scorecard
+  - game-build-review
   - game-build-strategy
   - game-concept-brainstorm
+  - game-douyin-h5
   - game-feedback-audit
   - game-feedback-design
   - game-feel-audit
   - game-hud-feedback-polish
   - game-hud-readability-audit
+  - game-implementation-plan
+  - game-live-patch
   - game-live-risk-audit
   - game-loop-bootstrap
   - game-mechanics-systems-audit
   - game-mechanics-systems-design
   - game-playability-verifier
   - game-polished-prototype
+  - game-production-code
   - game-production-feature
   - game-production-readiness-audit
   - game-project-audit
   - game-project-state-assessment
   - game-repair-roadmap
   - game-scope-completeness-audit
+  - game-scope-guard
   - game-scope-profile
   - game-screenshot-critic
+  - game-subagent-build-loop
   - game-super-build
   - game-ux-flow-audit
   - game-ux-flow-designer
@@ -68,12 +75,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:a213c295ad1dc6c687ce19a89302659f644ea9a1d64b9ee8744aa02b6d2dddc2
+    hash: sha256:e9b43112b11c2c0e1994fce89a11f3a23afc7808080f9871e15db64b6ab8efb5
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:b27144597325d8dc038ef5500a9f72267389bc3d5e7c4e86b01d4ed2b5709e4a
+    hash: sha256:d1c57589a60b01372dc7d4653cad7131f4af908dcc7e831cbcad158efce22a26
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -83,5 +90,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:8d8497d8f557ac6c230c33ac5e0d8c1a8943d49b042e120a1fcdc1ad40dd0309
+    hash: sha256:b0dbe859289b06b9bfa08a0366e6bf76bebe38bf341da4e4d2e4e44228a213f8
     note: Referenced support file: tests/smoke.md

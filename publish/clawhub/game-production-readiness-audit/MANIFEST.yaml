@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit whether the project meets production-grade expectations for structure, maintainability, standards, and safe continued iteration.
+  Use when auditing whether a game project meets production-grade standards for release or continued iteration.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:2523fabbe7e1db459ac7fa3b9da18657c979a199173765abd1ce165276b15c72
+    hash: sha256:f8ed7f42d8e04bfcf407cfd05629eec6b539458bddc18963355ce0a2aeb86abd
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:e3623aceb4570ef3efb34c4451c2a50eea0a08c44269b5283f420dd561e57a5b
+    hash: sha256:71f5736f96c42ad5dfe5d2cbf3ed000b1eee393e5ded7de07a376cfe72be72a8
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:0cc305d66066877293789cac0a56fe39d579f9c5a19dacbe876ce13c2f839ca6
+    hash: sha256:812b868d8d593054339ec1a9d824c51620118ce2263f7d02fb6473e8b69f67f3
     note: Referenced support file: tests/smoke.md

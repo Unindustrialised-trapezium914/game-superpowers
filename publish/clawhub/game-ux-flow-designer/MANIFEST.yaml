@@ -1,9 +1,9 @@
 bundle: game-ux-flow-designer
-bundle_version: 1.1.1
+bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Design the interaction and interface flow before or alongside implementation. Focus on the first minutes, clarity, menus, onboarding, and feedback so the game feels understandable and intentional.
+  Use when designing onboarding, menus, CTA hierarchy, and first-minute interaction flow for a game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,22 +30,22 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
     version: 1
-    hash: sha256:630f725b31351d09c124b1d2b44a3cb2a5f87416a574eda34f11b5914e19a92b
+    hash: sha256:758eba4b2f4dbcfe4489b68ba81fc389beb6b07ed91758ca470a1300080eb900
     note: Bundle release notes
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:d17f554cabfa13493f8a8eb0b809f84358a9c9ae156649cf47c5499033098299
+    hash: sha256:15d2e33e42d382d0a6b6bf4c64648045d554ecd03494355168351c1b02f21a36
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:c3dd44ee25d545b048f00d2252ab9c90b79e4b17fec5bd3862c07d73cdbb102a
+    hash: sha256:3fac64b8dd462d182903a63611022b4dcc4fbbb9f583b58b47835e4750f0bbbc
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:ba0e5bf7e08866755ed5249ed9eb60265350286bbc59b3e2df95891f33c96f48
+    hash: sha256:0e0aca7a311849efb14ac1cf0180dfd7529431ffc30cc11c7660c989b228dfe2
     note: Referenced support file: tests/smoke.md

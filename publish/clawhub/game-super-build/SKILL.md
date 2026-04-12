@@ -1,98 +1,43 @@
 ---
 name: game-super-build
-description: Use as the top-level orchestration skill for serious game work. It decides project state, locks concept and scope, chooses an AI-native build mode, sets the quality target, and routes the rest of the workflow. This is the main “skills of skills” entry point.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves verification.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when orchestrating serious game work across concept, scope, build mode, quality target, and downstream routing."
 ---
 
 # Game Super Build
 
-You are the lead game-production workflow.
-Your job is **not** to produce the smallest thing that technically runs.
-Your job is to choose the right strategy for the project state and create the strongest result that fits the request.
+Lead game-production workflow. Choose the right strategy for project state and quality target instead of just producing the smallest thing that runs.
 
-## Core principle
-These are different situations and must not be treated the same:
-- greenfield / from scratch
-- existing but prelaunch
-- shipped
-- live / risky
+## Outputs
 
-It must also distinguish between:
-- build requests
-- audit requests
-- audit-then-repair requests
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): keep all findings, plans, and decisions in conversation. Do not create `docs/` files.
+- **minimal**: write only `docs/game-studio/plan.md` and `docs/game-studio/quality-target.md` for cross-session continuity.
+- **full**: create or update the relevant `docs/game-studio/` records for project state, concept, requirements, scope, build strategy, backend, UX, feedback, architecture, plan, quality, and release safety.
 
-## Required outputs
-Create and maintain:
-- `docs/game-studio/project-state.md`
-- `docs/game-studio/concept-brainstorm.md`
-- `docs/game-studio/requirements.md`
-- `docs/game-studio/spec.md`
-- `docs/game-studio/system-design.md`
-- `docs/game-studio/scope-profile.md`
-- `docs/game-studio/build-strategy.md`
-- `docs/game-studio/backend-decision.md`
-- `docs/game-studio/backend-implementation.md` (when a concrete specialist route is chosen)
-- `docs/game-studio/ux-flow.md`
-- `docs/game-studio/feedback-design.md`
-- `docs/game-studio/architecture.md`
-- `docs/game-studio/plan.md`
-- `docs/game-studio/quality-target.md`
-- `docs/game-studio/quality-report.md`
-- `docs/game-studio/release-safety.md` (when shipped/live-risky)
-- `docs/game-studio/rolling-supervisor.md` (when autonomous rolling mode is enabled)
-
-Use these shared assets when relevant:
-- `./shared/templates/project-state-assessment.md`
-- `./shared/templates/concept-brainstorm.md`
-- `./shared/templates/requirements-brief.md`
-- `./shared/templates/game-build-brief.md`
-- `./shared/templates/system-design.md`
-- `./shared/templates/scope-profile.md`
-- `./shared/templates/feedback-design.md`
-- `./shared/templates/build-strategy.md`
-- `./shared/templates/backend-decision.md`
-- `./shared/templates/quality-target.md`
-- `./shared/templates/quality-report.md`
-- `./shared/templates/release-safety.md`
-- `./shared/templates/rolling-supervisor-plan.md`
-
-## Routing workflow
-1. **Detect whether the user wants a build, an audit, or both.**
-   - If the primary request is to inspect an existing repo, route to `game-project-audit` before proposing implementation changes.
-2. **Assess project state first.**
-   - Use `game-project-state-assessment`.
-   - Inspect the repo before assuming anything.
-3. **Lock the fantasy.**
-   - Use `game-concept-brainstorm` when the request is vague, dreamy, or weakly differentiated.
-4. **Sharpen requirements.**
-   - Use `game-requirements-brainstorm` when priorities are unclear or contradictory.
-5. **Set scope tier.**
+## Phase map
+1. **Classify**
+   - Detect build, audit, or both.
+   - Existing repo inspection routes to `game-project-audit` first.
+   - Assess project state with `game-project-state-assessment`.
+2. **Lock the brief**
+   - Use `game-concept-brainstorm` when the request is vague, weakly differentiated, archetype-ambiguous, or a one-prompt showcase build.
+   - Use `game-requirements-brainstorm`.
    - Use `game-scope-profile`.
-6. **Choose mode and quality target.**
    - Use `game-build-strategy`.
-7. **Choose or compare backend profiles.**
+3. **Choose implementation route**
    - Use `game-backend-selector`.
-   - If the chosen profile is web 2D or browser 3D, route to the matching specialist skill so the implementation path becomes concrete.
-8. **Design the user experience before system sprawl.**
-   - Use `game-ux-flow-designer`.
-9. **Design feedback and feel explicitly.**
-   - Use `game-feedback-design`.
-10. **Define game-native systems.**
-   - Use `game-mechanics-systems-design`.
-11. **Lock code standards.**
-   - Use `game-production-code`.
-12. **Plan and implement.**
-   - Use `game-implementation-plan` and the selected execution mode.
-13. **Verify and critique.**
-   - Use `game-playability-verifier` and `game-screenshot-critic`.
-14. **Use compare or rolling modes only when justified.**
+   - Route explicit Douyin H5 delivery through `game-douyin-h5` before deeper browser specialization.
+   - Route chosen web 2D or browser 3D profiles to the matching specialist skill.
+4. **Design the product**
+   - Use `game-ux-flow-designer`, `game-feedback-design`, and `game-mechanics-systems-design`.
+   - Use `game-production-code` when the quality target needs product-grade implementation standards.
+5. **Execute and verify**
+   - Use `game-implementation-plan`.
+   - If subagents are available and the target is above throwaway-spike quality, prefer `game-subagent-build-loop`.
+   - Review and verify with `game-build-review`, `game-playability-verifier`, and `game-screenshot-critic`.
+6. **Escalate only when justified**
+   - Use compare or rolling-supervisor modes only when the task size or uncertainty warrants them.
 
 ## Important
 For browser games, stack-neutral does not mean implementation-vague.
-Once the route is chosen, make the architecture and UI rules concrete.
+Do not confuse fewer questions with better workflow.

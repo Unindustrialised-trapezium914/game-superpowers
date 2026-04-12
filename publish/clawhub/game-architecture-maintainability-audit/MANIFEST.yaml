@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit architecture, state management, boundaries, coupling, and maintainability risks that will make future AI or human iteration harder.
+  Use when auditing structure, boundaries, coupling, or state-management risks in an existing game project.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:34c0442f467deeff944e0c1afefc9d7d52e5730a83e4417fc434abd928741df7
+    hash: sha256:84bb6bc06bdf76cbd867af4c0c02bb5d9a69d4cf6f6a1bd9c0bd8e860c3455ca
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:30127f14aacdb7856737c1ffdedc4e487ccb2f9a4bf5d3592fe5267ce587d2f7
+    hash: sha256:22cca933407ed4a089ef4ce64f26ada7e6915f222e9984b7e582839929484b32
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -65,5 +65,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:8b74eb12ed9b8393300eadc087f41e519ef2ecb8876ebeb0528901e603bb42e5
+    hash: sha256:44c9d71d7840b3c6c7dcb9c6771b5594e91fb6550d3f3d6f0fa6717b4f480b7d
     note: Referenced support file: tests/smoke.md

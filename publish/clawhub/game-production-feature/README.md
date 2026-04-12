@@ -4,7 +4,7 @@ Part of the **Game Superpowers** skill system.
 
 ## Summary
 
-Use when the requested outcome should land as a maintainable product-grade feature rather than a prototype. This skill protects completeness, integration quality, and verification discipline.
+Use when a requested game feature should land as a maintainable product-grade feature, not a prototype slice.
 
 ## Recommended usage
 
@@ -14,7 +14,7 @@ Use when the requested outcome should land as a maintainable product-grade featu
 
 ## Companion skills
 
-- None
+- `using-game-superpowers`
 
 ## Source of truth
 

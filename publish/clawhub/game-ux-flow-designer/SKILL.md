@@ -1,12 +1,6 @@
 ---
 name: game-ux-flow-designer
-description: Design the interaction and interface flow before or alongside implementation. Focus on the first minutes, clarity, menus, onboarding, and feedback so the game feels understandable and intentional.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access.
-metadata:
-  author: game-superpowers
-  version: "1.1.1"
-  domain: game-development
+description: "Use when designing onboarding, menus, CTA hierarchy, and first-minute interaction flow for a game."
 ---
 
 # Game UX Flow Designer
@@ -14,8 +8,11 @@ metadata:
 ## Goal
 Define the player-facing flow clearly enough that implementation does not drift into unreadable or frustrating UX.
 
-## Deliverable
-Write `docs/game-studio/ux-flow.md`.
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present UX flow design in conversation.
+- **minimal** or **full**: write `docs/game-studio/ux-flow.md`.
 
 ## Must cover
 - entry flow
@@ -48,3 +45,4 @@ Explicitly decide:
 ## Important
 Do not stop at vague UX language.
 Lock concrete player-facing rules that implementation can actually follow.
+If critical UX flow details are still unknown, ask follow-up questions until the flow is explicit enough to implement with confidence.

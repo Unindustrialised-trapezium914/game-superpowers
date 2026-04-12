@@ -1,12 +1,6 @@
 ---
 name: game-rolling-supervisor
-description: Enable a guarded external rolling build/verify/repair loop for high-autonomy game development. Use when the task is too large for one clean session and broad changes are allowed.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access, shell/build access, and an external supervisor process.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when game work is too large for one session and needs a guarded external build/verify/repair loop."
 ---
 
 # Game Rolling Supervisor
@@ -14,9 +8,11 @@ metadata:
 ## Goal
 Push a game project through repeated autonomous passes without letting one long context rot into uselessness.
 
-## Deliverables
-- `docs/game-studio/rolling-supervisor.md`
-- `docs/game-studio/rolling/state.json`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present rolling supervisor plan in conversation.
+- **minimal** or **full**: write `docs/game-studio/rolling-supervisor.md` and `docs/game-studio/rolling/state.json`.
 
 Use:
 - `./shared/templates/rolling-supervisor-plan.md`
@@ -24,13 +20,8 @@ Use:
 - `./schemas/rolling-state.schema.json`
 - `./schemas/session-result.schema.json`
 
-## When to use
-- the user wants high-autonomy end-to-end generation
-- the target is bigger than a single clean session
-- the repo can tolerate multiple build/verify/repair cycles
-- broad changes are allowed or the build is greenfield
-
 ## Rules
+- use this only when the repo can tolerate repeated build/verify/repair cycles
 - prefer **short-lived worker sessions** over one giant session
 - every worker must emit a compact structured handoff
 - verification gates decide whether to continue

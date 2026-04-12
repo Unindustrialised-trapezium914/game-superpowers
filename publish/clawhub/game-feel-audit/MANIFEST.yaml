@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit game feel and responsiveness based on control paths, timing assumptions, animation hooks, camera reactions, and feedback cues.
+  Use when auditing control feel, responsiveness, timing, camera reaction, or animation feedback in a game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:5e277d7b28c1dabafeda90ddade6d46fb112d0dc7783d4c068c99ab71eddec23
+    hash: sha256:99ff3c71a7cf1d9c6dfdf406997f2f71da1e7a3432900796657551e3e4bd4a1a
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:3e0996f29c857ac6bbe736f8aa2fb1db7392116f85431e6a3fe421e17711b632
+    hash: sha256:ed09cc06d8b6bba32a613c165bbc0d366154fa10c89395b94044046048ee421a
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:4629d9c4fcc467346a3a9c8509dcd9c04af11f0731af82e6cf33da908eeb9cad
+    hash: sha256:c82c576a48f36f198f2e76e31d096bc04cadf0b0f214b8c5848719bef6446d6b
     note: Referenced support file: tests/smoke.md

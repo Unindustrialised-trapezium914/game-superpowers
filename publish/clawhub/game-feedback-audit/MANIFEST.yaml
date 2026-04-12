@@ -3,7 +3,7 @@ bundle_version: 1.1.0
 bundle_date: 2026-03-30
 license: MIT
 description: >
-  Audit interaction feedback quality: input acknowledgment, hit/collect/reward/failure signaling, danger telegraphing, and state-transition clarity.
+  Use when auditing responsiveness, rewards, failures, danger telegraphing, or state-transition feedback in a game.
 compatibility:
   designed_for:
     surfaces:
@@ -30,7 +30,7 @@ compatibility:
   spec_version: agentskills.io/1.0
   frontmatter_mode: metadata
 dependencies:
-  []
+  - using-game-superpowers
 files:
   - path: CHANGELOG.md
     role: reference
@@ -40,12 +40,12 @@ files:
   - path: README.md
     role: reference
     version: 1
-    hash: sha256:1035f582017b319e7989b865f31f4d3b5fbf5aaa8c8e1c2e6202a39572a48c24
+    hash: sha256:13045932f5a054b8d8fa56cfc04cd974dc479deae1b6af5c37b0568fc59b6e48
     note: ClawHub-facing usage and context
   - path: SKILL.md
     role: skill
     version: 1
-    hash: sha256:e0f553587ed4f452e30a625c431333bc836854f4b8e4f1c6912892f3fd79fcbe
+    hash: sha256:d6d8d87c8e833c538f4e8ddb8152cafe787cb10ebd58026569df78d2de6fbc55
     note: Canonical skill definition for this publish bundle
   - path: examples/usage.md
     role: reference
@@ -70,5 +70,5 @@ files:
   - path: tests/smoke.md
     role: reference
     version: 1
-    hash: sha256:23688fc5107ec42786bce0d4a9e1032f9cea43f39615f49cfb128c2e9b2f0379
+    hash: sha256:382191df0cc9e2e3469fa6ffda3033c40446292fdc28238708b6e5b9a6d32149
     note: Referenced support file: tests/smoke.md

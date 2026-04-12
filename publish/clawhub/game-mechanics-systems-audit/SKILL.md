@@ -1,12 +1,6 @@
 ---
 name: game-mechanics-systems-audit
-description: Audit core verbs, loop integrity, system coherence, progression links, and whether implemented features actually form a playable game.
-license: MIT
-compatibility: Claude Code and Codex. Best results with file read/write access; shell/build access improves evidence quality.
-metadata:
-  author: game-superpowers
-  version: "1.1.0"
-  domain: game-development
+description: "Use when auditing core verbs, loop integrity, progression, or whether implemented systems form a playable game."
 ---
 
 # Game Mechanics Systems Audit
@@ -14,11 +8,11 @@ metadata:
 ## Goal
 Audit whether the project’s systems compose into a coherent game rather than a pile of disconnected features.
 
-## Deliverables
-Update:
-- `docs/game-studio/audit/audit-summary.md`
-- `docs/game-studio/audit/scorecard.json`
-- `docs/game-studio/audit/repair-roadmap.md`
+## Outputs
+
+Follow the `using-game-superpowers` output strategy:
+- **inline** (default): present findings in conversation.
+- **minimal** or **full**: write to `docs/game-studio/audit/audit-summary.md`, `docs/game-studio/audit/scorecard.json`, `docs/game-studio/audit/repair-roadmap.md`.
 
 Use:
 - `./shared/checklists/mechanics-systems-audit-checklist.md`
