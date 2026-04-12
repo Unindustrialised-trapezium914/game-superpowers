@@ -27,6 +27,13 @@ $managedNow = New-Object System.Collections.Generic.List[string]
 Get-ChildItem $src -Directory | ForEach-Object {
   $target = Join-Path $dest $_.Name
   if (Test-Path $target) {
+    if ((Get-Item $target).LinkType -eq 'Junction' -or (Get-Item $target).LinkType -eq 'SymbolicLink') {
+      $resolved = (Get-Item $target).Target
+      if ($resolved -eq $_.FullName) {
+        $managedNow.Add($_.Name)
+        return
+      }
+    }
     Write-Host "skip: $target exists and is not managed by this repo"
     $skipped++
   } else {

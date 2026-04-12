@@ -2,13 +2,13 @@
 
 [English](./README.md)
 
-一个给 Claude Code 和 Codex 用的游戏开发 skills 库。
+一个给 Claude Code、Codex 和 Gemini CLI 用的游戏开发 skills 库。
 
 用可复用的 game-native skills 来 build、audit、polish、repair 游戏项目。
 
 ## 一眼看完
 
-- 给 Claude Code 和 Codex 用
+- 给 Claude Code、Codex 和 Gemini CLI 用
 - skills 全部放在 `skills/`
 - 可以本地安装、自由 fork、按需组合
 - source of truth 就在这个仓库里
@@ -51,6 +51,22 @@ powershell -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
 
 或者把需要的 skills 复制或 symlink 到项目的 `.agents/skills/`。
 
+### Gemini CLI
+
+从本地仓库直接接入：
+
+```bash
+gemini extensions link /path/to/game-superpowers-skills-only
+```
+
+或者从 GitHub 安装：
+
+```bash
+gemini extensions install https://github.com/haoshengli/game-superpowers-skills-only
+```
+
+Gemini 会通过仓库根目录的 `GEMINI.md` 和 `gemini-extension.json` 加载这套 skills。
+
 完整安装说明见 [`INSTALL.md`](./INSTALL.md)。
 
 ### 安装后的更新机制
@@ -66,6 +82,7 @@ powershell -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
 
 - Claude：`/using-game-superpowers`
 - Codex：`$using-game-superpowers`
+- Gemini：直接正常提问，例如 `Use Game Superpowers to audit this game project.`
 
 ### 示例
 

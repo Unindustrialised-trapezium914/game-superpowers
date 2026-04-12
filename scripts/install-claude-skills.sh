@@ -25,6 +25,10 @@ for skill in "$SRC"/*; do
   name="$(basename "$skill")"
   target="$DEST/$name"
   if [ -e "$target" ] || [ -L "$target" ]; then
+    if [ -L "$target" ] && [ "$(readlink "$target")" = "$skill" ]; then
+      printf '%s\n' "$name" >> "$managed_now"
+      continue
+    fi
     echo "skip: $target exists and is not managed by this repo"
     skipped=$((skipped+1))
     continue

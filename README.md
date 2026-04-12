@@ -2,13 +2,13 @@
 
 [简体中文](./README.zh-CN.md)
 
-Game development skills for Claude Code and Codex.
+Game development skills for Claude Code, Codex, and Gemini CLI.
 
 Build, audit, polish, and repair game projects with reusable game-native skills.
 
 ## At a glance
 
-- for Claude Code and Codex
+- for Claude Code, Codex, and Gemini CLI
 - skills live in `skills/`
 - install locally, fork freely, use selectively
 - source of truth stays in this repo
@@ -51,6 +51,22 @@ This installs the `~/.agents/skills/game-superpowers/` package root and sets up 
 
 Or copy or symlink selected skills into a project's `.agents/skills/`.
 
+### Gemini CLI
+
+Install from the local repo:
+
+```bash
+gemini extensions link /path/to/game-superpowers-skills-only
+```
+
+Or install from GitHub:
+
+```bash
+gemini extensions install https://github.com/haoshengli/game-superpowers-skills-only
+```
+
+Gemini loads the extension through the repo-root `GEMINI.md` and the `gemini-extension.json` manifest.
+
 Full setup instructions: [`INSTALL.md`](./INSTALL.md)
 
 ### Updates after install
@@ -66,6 +82,7 @@ Full setup instructions: [`INSTALL.md`](./INSTALL.md)
 
 - Claude: `/using-game-superpowers`
 - Codex: `$using-game-superpowers`
+- Gemini: ask normally, for example `Use Game Superpowers to audit this game project.`
 
 ### Example prompts
 

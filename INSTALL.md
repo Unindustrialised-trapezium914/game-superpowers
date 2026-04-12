@@ -18,6 +18,13 @@ Codex supports skills in:
 - `.agents/skills/` inside repositories for repo-scoped skills
 - symlinked skill folders in those locations
 
+### Gemini CLI
+Gemini CLI supports extensions from:
+- local paths linked with `gemini extensions link <path>`
+- git repository URLs installed with `gemini extensions install <source>`
+
+For this repo, Gemini reads the repo-root `GEMINI.md` declared by `gemini-extension.json`.
+
 ## Repository layout used here
 
 This repo keeps the source-of-truth skills in:
@@ -138,6 +145,38 @@ If you only want these skills inside one project, copy or symlink selected skill
 
 For repo-scoped installs, prefer copying if you want maximum portability for collaborators using ZIP downloads, Windows setups without symlink support, or restrictive filesystems.
 
+## Gemini CLI options
+
+### Option A — local linked extension
+
+```bash
+gemini extensions link /path/to/game-superpowers-skills-only
+```
+
+This is the best development setup because Gemini reads directly from this clone. Edits in the repo are reflected immediately the next time Gemini starts a new session.
+
+### Option B — install from a Git repository
+
+```bash
+gemini extensions install https://github.com/haoshengli/game-superpowers-skills-only
+```
+
+Use this when you want a normal installed extension instead of a live link to a working clone.
+
+### Gemini verification
+
+Validate the extension manifest first if you want a quick sanity check:
+
+```bash
+gemini extensions validate /path/to/game-superpowers-skills-only
+```
+
+Then start a new Gemini session and ask:
+
+```text
+Use Game Superpowers to audit this game project.
+```
+
 ## Verifying installation
 
 ### Claude
@@ -166,10 +205,18 @@ Or ask:
 Use Game Superpowers to build a polished prototype.
 ```
 
+### Gemini CLI
+Start a new Gemini session after linking or installing, then ask:
+
+```text
+Use Game Superpowers to build a polished prototype.
+```
+
 ## Notes
 
 - Claude project/add-dir mode is the most official-friendly way to use the full collection without a plugin.
 - Codex user install works well with symlinked skill folders.
+- Gemini CLI uses the repo as an extension rather than a skill-folder install.
 - Claude personal install also links `shared/` and `schemas/` at the `~/.claude/` root because many skills reference them via relative paths.
 - The shell installers install repo-local git hooks so later merges and checkouts keep personal installs in sync.
 - If `.claude/skills/` or `.agents/skills/` looks strange in a file browser, that is expected: they are compatibility symlink paths that point back to `skills/`.
