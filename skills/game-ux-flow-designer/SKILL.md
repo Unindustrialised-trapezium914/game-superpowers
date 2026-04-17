@@ -14,6 +14,9 @@ Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present UX flow design in conversation.
 - **minimal** or **full**: write `docs/game-studio/ux-flow.md`.
 
+## Spec-driven compatibility
+When `game-spec-driven-planning` is active, fold the UX flow decisions into `changes/<change-id>/design.md` instead of creating a separate durable doc by default.
+
 ## Must cover
 - entry flow
 - first 30 seconds

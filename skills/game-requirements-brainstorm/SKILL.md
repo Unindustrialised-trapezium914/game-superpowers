@@ -18,6 +18,12 @@ Use:
 - `../../shared/templates/requirements-brief.md`
 - `../../shared/templates/quality-target.md`
 
+## Spec-driven compatibility
+When `game-spec-driven-planning` is active and the user wants durable artifacts in the target repo:
+- use the requirement brief as input to `changes/<change-id>/proposal.md`
+- write capability deltas under `changes/<change-id>/specs/<capability>/spec.md`
+- promote stable approved behavior into `specs/<capability>/spec.md` when the project wants living specs kept current
+
 ## Workflow
 1. Extract what the user definitely wants.
 2. Separate must-build features, must-not-cut qualities, optional features, and explicit non-goals.

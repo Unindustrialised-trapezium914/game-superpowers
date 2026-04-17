@@ -89,6 +89,7 @@ Full setup instructions: [`INSTALL.md`](./INSTALL.md)
 - "Use Game Superpowers to audit this existing game project's UI/UX and feedback design."
 - "Use Game Superpowers to build a polished 2D web prototype with strong HUD and feedback."
 - "Use Game Superpowers to review whether this game is closer to first-playable or production-feature quality."
+- "Use Game Superpowers with spec-driven planning and create requirements, spec, design, and tasks for this combat feature."
 
 ## Tracks
 
@@ -105,6 +106,16 @@ flowchart TD
     F --> J[Targeted repair skills]
     G --> K[UX + feedback + verifier skills]
 ```
+
+## Optional Spec-Driven Workflow
+
+For teams that want durable planning artifacts in the target repo, Game Superpowers now supports a lightweight OpenSpec-inspired workflow.
+
+- living specs: `specs/<capability>/spec.md`
+- change package: `changes/<change-id>/proposal.md`, `design.md`, `tasks.md`
+- spec delta: `changes/<change-id>/specs/<capability>/spec.md`
+
+Use `game-spec-driven-planning` when the user explicitly asks for `requirements/spec/design/tasks`, references OpenSpec, or wants repo-native planning artifacts that survive across sessions.
 
 ## Repo Layout
 
@@ -124,6 +135,7 @@ Notes:
 ## Library
 
 - bootstrap and routing skills
+- optional spec-driven planning for durable change artifacts
 - build planning and strategy skills
 - UX, UI, and feedback skills
 - mechanics and systems skills

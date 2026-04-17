@@ -24,6 +24,7 @@ Follow the `using-game-superpowers` output strategy:
    - Use `game-requirements-brainstorm`.
    - Use `game-scope-profile`.
    - Use `game-build-strategy`.
+   - If the user explicitly wants durable `requirements/spec/design/tasks` artifacts, add `game-spec-driven-planning`.
 3. **Choose implementation route**
    - Use `game-backend-selector`.
    - Route explicit Douyin H5 delivery through `game-douyin-h5` before deeper browser specialization.

@@ -14,6 +14,11 @@ Follow the `using-game-superpowers` output strategy:
 - **inline** (default): present implementation plan in conversation.
 - **minimal** or **full**: write `docs/game-studio/plan.md`.
 
+## Spec-driven compatibility
+When `game-spec-driven-planning` is active:
+- write the implementation plan to `changes/<change-id>/tasks.md`
+- keep each task traceable to the requirement or design area it implements
+
 ## Key rule
 Do not use one default task size for all situations.
 Use the chosen development mode.

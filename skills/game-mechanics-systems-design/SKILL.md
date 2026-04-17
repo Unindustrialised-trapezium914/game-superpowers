@@ -18,6 +18,11 @@ Use:
 - `../../shared/templates/system-design.md`
 - `../../shared/reference/game-dev-abstractions.md`
 
+## Spec-driven compatibility
+When `game-spec-driven-planning` is active:
+- persist the systems design into `changes/<change-id>/design.md`
+- consolidate UX, feedback, and systems decisions into the same design file instead of scattering them across unrelated docs
+
 ## Cover
 - primary and secondary verbs
 - core loop and loop exits

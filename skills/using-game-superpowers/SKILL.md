@@ -76,6 +76,12 @@ Add the matching audit skills:
 ### Trigger examples
 - Requests like `做一个 Douyin H5 Interactive 作品`, `抖音互动作品`, `抖音互动空间`, `抖音互动H5`, `竖屏 H5 互动页`, or `平台只接受 H5，要先定框架、文件结构和适配方式` should strongly bias toward `game-douyin-h5`.
 - If the same request also includes real-time browser gameplay, add `game-web-2d-specialist` after the platform shell and route are locked.
+- Requests that explicitly ask for `requirements/spec/design/tasks`, `OpenSpec`, `spec-driven`, or durable repo-native planning artifacts should route through `game-spec-driven-planning`.
+
+## Spec-driven overlay
+- `game-spec-driven-planning` is an optional planning layer, not a replacement for Build, Audit, Repair, or Polish.
+- Use it when the user wants durable change artifacts in the target repo.
+- Keep the normal track classification, then add the spec-driven layer on top where it helps.
 
 ## Rules
 - Classify before implementation and prefer specialized skills over ad hoc reasoning.
@@ -85,6 +91,7 @@ Add the matching audit skills:
 - Prefer a builder + reviewer + verifier loop when the host supports subagents and the user wants maximum result quality; parallelize only across disjoint ownership zones.
 - Require fresh runtime verification before claiming a benchmark or showcase build is complete.
 - For cross-project reference or benchmarking, audit the reference project first, then apply the extracted patterns to the target via Repair or Build.
+- Do not force spec-driven files when the user only wants inline planning.
 
 ## Output expectation
 

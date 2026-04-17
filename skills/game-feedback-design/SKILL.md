@@ -20,6 +20,9 @@ Use:
 - `../../shared/checklists/game-feel-pillars.md`
 - `../../shared/checklists/ui-ux-hard-rules.md`
 
+## Spec-driven compatibility
+When `game-spec-driven-planning` is active, fold the feedback design decisions into `changes/<change-id>/design.md` instead of creating a separate durable doc by default.
+
 ## Cover
 - input acknowledgment
 - success / reward signals

@@ -9,6 +9,7 @@ Keep changes small, explicit, and easy to review.
 - add a new skill with a single, clear job
 - improve routing between existing skills
 - sharpen a skill description so invocation is more reliable
+- improve spec-driven planning templates or routing without bloating unrelated skills
 - improve shared schemas, templates, or reference material
 - fix installation or validation docs
 
@@ -72,6 +73,7 @@ Fix validator errors before submitting.
 - Keep wording concrete and operational.
 - Avoid turning one skill into a grab bag of loosely related tasks.
 - Prefer introducing a new skill when the responsibility is distinct.
+- If you change the spec-driven planning layer, keep `skills/game-spec-driven-planning/SKILL.md`, `shared/templates/`, and `shared/reference/spec-driven-workflow.md` aligned.
 - Keep docs and install instructions aligned with the current repository layout.
 - Do not commit local machine files such as `.DS_Store`, editor swap files, logs, or `.env` files.
 
