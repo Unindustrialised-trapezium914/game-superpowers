@@ -20,4 +20,4 @@ When changing a skill:
 
 ## Collection entrypoint
 
-If you need a top-level collection skill, use `using-game-superpowers`.
+If you need a top-level collection skill, use `gsp-orchestrator`.
